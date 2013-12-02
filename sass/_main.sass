@@ -157,6 +157,8 @@
 				vertical-align: middle
 				display: inline-block
 				margin-right: 6px 
+				position: relative
+				top: -1px 
 	.search__price
 		position: relative
 		height: 31px 
@@ -291,7 +293,7 @@
 			input
 				position: absolute
 				left: 0
-				top: 3px 
+				top: 1px 
 .news
 	padding-top: 26px 
 	.news__title
@@ -406,7 +408,11 @@
 		display: inline-block
 		margin-right: 3px 
 		vertical-align: middle
-	@each $s in twitter,facebook,googleplus, vimeo, ok
+	@each $s in twitter,facebook,googleplus,vimeo,ok
 		.social__#{$s}
 			+s(s_#{$s})
+			&:hover
+				+s(s_#{$s}h)
+			&:active
+				+s(s_#{$s}a)
 			
