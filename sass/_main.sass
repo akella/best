@@ -1,0 +1,405 @@
+// Normally mainpage style
+.search
+	margin-top: 82px 
+	margin-bottom: 73px 
+	position: relative
+	background-color: #879193
+	+box-shadow(0 4px 6px rgba(0,0,0,.25))
+	border-radius: 10px
+	height: 234px 
+.search__form
+	position: relative
+	h3
+		font-size: 15px 
+		font-weight: normal
+		text-transform: uppercase
+		color: #3B3B3B
+		left: 20px  
+		top: -45px 
+		position: absolute
+	form
+		width: 645px 
+		padding: 20px 0 0 20px
+	.search__nav
+		font-size: 0 
+		margin-bottom: 18px 
+		a
+			font-size: 15px 
+			display: inline-block
+			vertical-align: middle
+			padding: 3px 13px
+			color: #BFC3C5
+			text-transform: uppercase
+			text-decoration: none
+			&.is-active
+				color: #E5E5E5 
+		.sep
+			display: inline-block
+			vertical-align: middle
+			height: 22px 
+			border-left: 1px solid #4D555C
+			position: relative
+			top: -1px  
+	.search__col1
+		width: 330px 
+		float: left
+		border-right: 1px solid #929B9E 
+	.search__col2
+		float: right
+		width: 292px
+	.clr
+		clear: both 
+	.search__advanced
+		float: left
+		color: #fff
+		opacity: .6 
+		margin-top: 16px 
+	.search__button
+		display: inline-block
+		+bold
+		color: #fff
+		text-transform: uppercase
+		font-size: 15px  
+		+border-radius(4px)
+		background-color: #182a51
+		+background-image(linear-gradient(bottom, #5dad19 0%, #97c719 100%))
+		position: relative
+		width: 150px 
+		text-align: center
+		height: 35px 
+		line-height: 35px 
+		cursor: pointer
+		float: right
+		margin-top: 14px 
+		input
+			opacity: 0
+			position: absolute
+			left: 0
+			-webkit-appearance: none
+			top: 0
+			width: 100%
+			height: 100%     
+	.search__place
+		margin-bottom: 20px 
+		height: 31px 
+		label
+			float: left
+			height: 31px 
+			font-size: 12px 
+			line-height: 31px
+			background: #697A7F
+			color: #fff
+			width: 129px - 11px
+			padding-left: 11px    
+			border-radius: 4px 0 0 4px
+		.select
+			background: #fff
+			height: 31px  
+			line-height: 31px
+			border-radius: 0 4px 4px 0 
+			background: #fff
+			font-size: 12px 
+			width: 177px 
+			float: left
+			position: relative
+			select
+				opacity: 0
+				position: absolute
+				left: 0
+				top: 0
+				-webkit-appearance: none
+				width: 100%
+				height: 100%
+				z-index: 2
+			.select__value
+				padding-left: 16px 
+				color: #000 
+			.select__arr
+				right: 11px 
+				top: 13px 
+				+s(select)
+				position: absolute
+				z-index: 1 
+	.search__room
+		.search__roomlabel
+			float: left
+			height: 31px 
+			font-size: 12px 
+			line-height: 31px
+			background: #697A7F
+			color: #fff
+			width: 129px - 11px
+			padding-left: 11px    
+			border-radius: 4px 0 0 4px
+		.room
+			font-size: 12px 
+			padding-top: 6px 
+			padding-left: 12px 
+			color: #fff 
+			overflow: hidden
+			label
+				cursor: pointer
+				margin-right: 6px 
+				&.is-active
+					i
+						+s(check1)
+			input
+				display: none
+			i
+				+s(check)
+				vertical-align: middle
+				display: inline-block
+				margin-right: 6px 
+	.search__price
+		position: relative
+		height: 31px 
+		margin-bottom: 20px 
+		label,.search__pricelabel1, .search__pricelabel2
+			margin-bottom: 20px 
+			float: left
+			height: 31px 
+			font-size: 12px 
+			line-height: 31px
+			background: #697A7F
+			color: #fff
+			width: 90px - 11px
+			padding-left: 11px    
+			border-radius: 4px 0 0 4px
+			border-right: 1px solid #606769 
+		.search__pricelabel1,.search__pricelabel2
+			width: 29px 
+			padding: 0
+			text-align: center 
+			border-radius: 0
+		.search__pricevalue1,.search__pricevalue2
+			float: left
+			width: 70px 
+			background: #fff 
+			height: 31px 
+			line-height: 31px
+			text-align: center
+		.search__pricevalue2
+			border-radius: 0 4px 4px 0
+		.search__pricecurrency
+			position: absolute
+			right: -29px 
+			top: 6px 
+			color: #fff 
+			font-size: 12px 
+	.search__pricerange
+		background: #737D81 
+		
+.search__map
+	float: right
+	width: 264px 
+	position: absolute
+	right: 0
+	top: 0
+	border-radius: 0 10px 10px 0  
+	.search__mapimg
+		border-radius: 0 10px 10px 0
+		overflow: hidden
+		height: 234px 
+		width: 264px 
+	h3
+		font-size: 15px 
+		font-weight: normal
+		text-transform: uppercase
+		color: #3B3B3B
+		left: 0px  
+		top: -45px 
+		position: absolute
+	.search__maplink
+		position: absolute
+		bottom: 10px 
+		right: 10px 
+		background: #313b47
+		border-radius: 2px
+		text-transform: uppercase
+		font-size: 10px 
+		+bold
+		color: #fff
+		text-decoration: none
+		padding: 0px 14px  
+		height: 26px 
+		line-height: 26px 
+.promos
+	margin-right: -20px 
+	margin: 50px -20px 50px 0 
+	+clr
+	.promos__item
+		text-decoration: none
+		color: #fff 
+		float: left
+		width: 235px 
+		margin-right: 20px 
+		height: 144px 
+		position: relative
+		img
+			display: block
+	.promos__title
+		position: absolute
+		bottom: 0
+		right: 0
+		left: 0  
+		padding: 10px 0 10px 16px
+		font-size: 15px   
+		color: #fff 
+		+bold
+		background-color: #000 
+		background: rgba(#000, .6) 
+		border-radius: 0 0 6px 6px
+.vote
+	border-radius: 10px
+	border: 1px solid #B5B5B5 
+	background: #F9F9F9
+	position: relative
+	padding: 27px  
+	h2
+		position: absolute
+		top: -22px 
+		left: 18px 
+		height: 21px 
+		line-height: 23px
+		border-radius: 4px 4px 0 0 
+		font-size: 10px 
+		text-transform: uppercase
+		color: #fff 
+		background: #323C46
+		padding: 0 12px
+	.vote__title
+		color: #3B3B3B
+		font-size: 15px  
+		font-weight: normal
+		+semi
+		margin-bottom: 10px 
+	ul
+		list-style: none
+		input
+			margin-right: 5px 
+		li
+			margin-bottom: 5px 
+			padding-left: 18px 
+			position: relative
+			input
+				position: absolute
+				left: 0
+				top: 3px 
+.news
+	padding-top: 26px 
+	.news__title
+		color: #3B3B3B 
+		font-size: 20px 
+		+semi
+		margin-bottom: 20px 
+	.news__archive
+		width: 230px 
+		float: right
+		text-align: left
+		a
+			font-size: 13px 
+			color: #3B3B3B 
+			display: block
+	.hentries
+		margin-right: -20px 
+	.hentry
+		float: left
+		width: 225px 
+		margin-right: 20px 
+		color: #3B3B3B 
+		text-decoration: none
+		.hentry__title
+			font-weight: normal
+			+bold
+			font-size: 13px
+			text-decoration: underline
+		.hentry__content
+			margin-top: 10px 
+		.hentry__published
+			color: #27A9DE 
+			margin-top: 12px 
+			+semi
+.filters
+	border: 1px solid #dbdbdb
+	+border-radius(3px)
+	background-color: #fff
+	padding: 8px 0 
+	margin-bottom: 18px 
+	+clr
+	+box-shadow(0 2px 3px rgba(0,0,0,.11))
+	+background-image(linear-gradient(bottom, rgba(0,0,0,.06) 0%, rgba(0,0,0,0) 100%))
+	ul
+		list-style: none 
+		li
+			float: left
+			text-align: center
+			cursor: pointer
+		a
+			display: inline-block
+			+border-radius(2px / 4px 4px 3px)
+			color: #3b3b3b 
+			font-size: 13px 
+			height: 30px 
+			line-height: 30px
+			padding: 0 15px  
+			text-decoration: none
+			&.is-active
+				color: #fff 
+				background-color: #87bf19
+				+box-shadow(0 1px 0 rgba(255,255,255,.75), inset 0 1px 1px rgba(0,0,0,.21))
+	.filters__1
+		width: 170px 
+	.filters__2
+		width: 180px 
+	.filters__3
+		width: 240px 
+	.filters__4
+		width: 230px 
+	.filters__5
+		width: 168px 
+.items
+	margin: 0 -24px
+	.item
+		display: block
+		border-radius: 6px
+		padding: 20px 20px 15px 20px
+		text-decoration: none
+		color: #3b3b3b 
+		+clr
+		&:hover,&.is-active
+			+box-shadow(0 0 0px 1px #B1BFCE,0 0 0 4px #D5E1E8)
+		.item__pics
+			float: left
+			width: 360px 
+			img
+				float: left
+				margin: 0 5px 5px 0 
+		.item__info
+			font-size: 13px 
+			line-height: 1.3 
+			width: 529px 
+			float: left
+			h3
+				font-weight: normal
+				+bold
+				font-size: 15px 
+				margin-bottom: 1em 
+		.item__icons
+			float: right
+			.icon_1
+				+s(icon_1)
+				display: inline-block
+.social
+	font-size: 13px 
+	vertical-align: middle
+	margin: 30px 0
+	span
+		margin-right: 8px 
+	a
+		display: inline-block
+		margin-right: 3px 
+		vertical-align: middle
+	@each $s in twitter,facebook,googleplus, vimeo, ok
+		.social__#{$s}
+			+s(s_#{$s})
+			

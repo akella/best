@@ -1,0 +1,338 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- begin header  -->
+	<div class="header">
+		<h1 class="header__logo"><a href="#">Бест новострой</a></h1>
+		<!-- begin nav -->
+		<div class="nav">
+			<ul class="nav__1">
+				<li><a href="#">новостройки</a></li>
+				<li><a href="#">Покупателям</a></li>
+			</ul>
+			<ul class="nav__2">
+				<li><a href="#">Застройщикам</a></li>
+				<li><a href="#">Консалтинг и Аналитика</a></li>
+			</ul>
+			<ul class="nav__3">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<!-- end nav -->
+		<a href='#' class="callus">
+			<div class="callus__back"><i></i><span>Обратный звонок</span></div>
+			<div class="callus__phone">+7 495 995-15-25</div>
+			<div class="callus__answer">Отвечаем на вопросы</div>
+		</a>
+
+		<!-- begin mainslider  -->
+		<div class="mainslider">
+			<div class="mainslider__prev"></div>
+			<div class="mainslider__next"></div>
+			<div class="mainslider__pagination"><a href="#"></a><a href="#"></a><a href="#"></a><a class="is-active" href="#"></a></div>
+			<!-- begin slides -->
+			<div class="mainslider__slides">
+				<!-- begin slide -->
+				<div class="mainslider__slide">
+					<div class="mainslider__pic">
+						<img src="img/slide.png" alt="">
+					</div>
+					<div class="mainslider__text">
+						<h2>НОВые ОСТРОВЦЫ</h2>
+						<div class="mainslider__sub"><strong>СТАРТ ПРОДАЖ</strong> от 1.9 млн руб.</div>
+						<p class="mainslider__info">12 км от МКАД, Люберецкий район,в п. Октябрьский. Доступна ипотека,продается по ФЗ-214.</p>
+						<a href='#' class="mainslider__link">Перейти на страницу объекта</a>
+					</div>
+				</div>
+				<!-- end slide -->
+			</div>
+			<!-- end slides -->
+		</div>
+		<!-- end mainslider -->
+	</div>
+	<!-- end header -->
+
+
+	<!-- begin search  -->
+	<div class="search">
+		<!-- begin search__form  -->
+		<div class="search__form">
+			<h3>Поиск недвижимости</h3>
+			<div class="search__form">
+				<form action="/">
+					<nav class="search__nav">
+						<a href="#" class="is-active">Квартиры</a><div class="sep"></div><a href="#">Коттеджи</a><div class="sep"></div><a href="#">коммерческая</a>
+					</nav>
+					<div class="search__col1">
+						<!-- begin place -->
+						<div class="search__place">
+							<label for="">Местоположение</label>
+							<div class="select">
+								<div class="select__value">Москва</div>
+								<i class="select__arr"></i>
+								<select name="" id="">
+									<option value="">Москва</option>
+								</select>
+							</div>
+						</div>
+						<!-- end place -->
+						<!-- begin place -->
+						<div class="search__room">
+							<label for="" class="search__roomlabel">Кол-во комнат</label>
+							<div class="room">
+								<label for="" class="is-active"><i></i><input type="checkbox" name="" checked id="">1</label><label for=""><i></i><input type="checkbox" name="" id="">2</label>
+								<label for=""><i></i><input type="checkbox" name="" id="">3</label><label for=""><i></i><input type="checkbox" name="" id="">4</label>
+							</div>
+						</div>
+						<!-- end place -->
+					</div>
+					<!-- end col -->
+					<!-- begin search__col2  -->
+					<div class="search__col2">
+						<div class="search__price">
+							<label for="">Цена общая</label>
+							<div class="search__pricelabel1">
+								от
+							</div>
+							<div class="search__pricevalue1">3000000</div>
+							<div class="search__pricelabel2">
+								до
+							</div>
+							<div class="search__pricevalue2">10000000</div>
+							<div class="search__pricecurrency">руб.</div>
+						</div>
+						<div class="search__pricerange">
+							<div id="slider-range">jquery ui here</div>
+						</div>
+					</div>
+					<!-- end search__col2 -->
+					<div class="clr"></div>
+					<a href='#' class="search__advanced">Расширенный поиск</a>
+					<div class="search__button">Найти<input type="submit"></div>
+				</form>
+			</div>
+		</div>
+		<!-- end search__form -->
+		<!-- begin search__map  -->
+		<a href="#" class="search__map">
+			<h3>Карта объектов</h3>
+			<div class="search__mapimg">
+				<img src="img/map.jpg" alt="">
+			</div>
+			<div class="search__maplink">смотреть на карте</div>
+		</a>
+		<!-- end search__map -->
+	</div>
+	<!-- end search -->
+
+	<!-- begin l  -->
+	<div class="l l_newsvote">
+		<!-- begin l-col1  -->
+		<div class="l-col1">
+			<!-- begin vote  -->
+			<div class="vote">
+				<h2>опрос</h2>
+				<h3 class="vote__title">Квартиру какого типа Вы собираетесь приобрести в новостройке?</h3>
+				<ul>
+					<li><label><input type="radio">Квартиру-студию</label></li>
+					<li><label><input type="radio">1 комнатную квартиру</label></li>
+					<li><label><input type="radio">2 комнатную квартиру</label></li>
+					<li><label><input type="radio">3 комнатную квартиру</label></li>
+					<li><label><input type="radio">4 комнатную квартиру и более</label></li>
+				</ul>
+			</div>
+			<!-- end vote -->
+		</div>
+		<!-- end l-col1 -->
+		<!-- begin l-col2  -->
+		<div class="l-col2">
+			<!-- begin news  -->
+			<div class="news">
+				<div class="news__archive"><a  href="#">архив новостей</a></div>
+				<h2 class="news__title">Новости компании</h2>
+				<div class="hentries">
+				<!-- begin hentry  -->
+				<a href='#' class="hentry">
+					<h2 class="hentry__title">ЖК «Новые Островцы»:еще два корпуса аккредитованы в ВТБ24!</h2>
+<div class="hentry__content">Компания «БЕСТ-Новострой» сообщает о том, что корпуса 1.2 и 9 получили аккредитацию Банка ВТБ24/Банк Москвы.</div>
+
+<div class="hentry__published">3 Октября 2013</div>
+				</a>
+				<!-- end hentry -->
+				<!-- begin hentry  -->
+				<a href='#' class="hentry">
+					<h2 class="hentry__title">«ЭКО ПАРК Нахабино» – разрешение получено!</h2>
+<div class="hentry__content">Компания «БЕСТ-Новострой» сообщает о том, что жилой комплекс «ЭКО ПАРК Нахабино» получил разрешение на строительство.</div>
+
+<div class="hentry__published">2 Октября 2013</div>
+				</a>
+				<!-- end hentry -->
+				<!-- begin hentry  -->
+				<a href='#' class="hentry">
+					<h2 class="hentry__title">ЖК «Новые Островцы»: еще два корпуса аккредитованы в ВТБ24!</h2>
+<div class="hentry__content">Компания «БЕСТ-Новострой» сообщает о том, что корпуса 1.2 и 9 получили аккредитацию Банка ВТБ24/Банк Москвы.</div>
+
+<div class="hentry__published">3 Октября 2013</div>
+				</a>
+				<!-- end hentry -->
+				</div>
+			</div>
+			<!-- end news -->
+		</div>
+		<!-- end l-col2 -->
+	</div>
+	<!-- end l -->
+
+	<!-- begin promos  -->
+	<div class="promos">
+		<a href="#" class="promos__item">
+			<div class="promos__pic"><img src="img/promo1.jpg" alt=""></div>
+			<div class="promos__title">Простая ипотека</div>
+		</a>
+		<a href="#" class="promos__item">
+			<div class="promos__pic"><img src="img/promo2.jpg" alt=""></div>
+			<div class="promos__title">Сотрудничество</div>
+		</a>
+		<a href="#" class="promos__item">
+			<div class="promos__pic"><img src="img/promo3.jpg" alt=""></div>
+			<div class="promos__title">Новострой аренда</div>
+
+		</a>
+		<a href="#" class="promos__item">
+			<div class="promos__pic"><img src="img/promo4.jpg" alt=""></div>
+			<div class="promos__title">Аналитика и консалтинг</div>
+		</a>
+	</div>
+	<!-- end promos -->
+
+
+
+	<!-- begin filters  -->
+	<div class="filters">
+		<ul>
+			<li class="filters__1"><a class="is-active" href="#">Все новостройки</a></li>
+			<li class="filters__2"><a href="#">Новостройки Москвы</a></li>
+			<li class="filters__3"><a href="#">Новостройки Новой Москвы </a></li>
+			<li class="filters__4"><a href="#">Новостройки Подмосковья</a></li>
+			<li class="filters__5"><a href="#">Вторичное жилье</a></li>
+		</ul>
+	</div>
+	<!-- end filters -->
+
+	<!-- begin items  -->
+	<div class="items">
+		<!-- begin item  -->
+		<a href='#' class="item">
+			<div class="item__pics">
+				<img src="img/big.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+			</div>
+			<div class="item__info">
+				<h3>Жилой комплекс «Новое Бутово»</h3>
+				<p>6 км от МКАД, рядом район "Южное бутово". Доступна ипотека, продается по ФЗ-214, рядом с метро. Объект обладает отличной инфраструктурой и является лучшим решением для семейной покупки.</p>
+			</div>
+			<div class="item__icons">
+				<i class="icon_1"></i>
+			</div>
+		</a>
+		<!-- end item -->
+		<!-- begin item  -->
+		<a href='#' class="item">
+			<div class="item__pics">
+				<img src="img/big.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+			</div>
+			<div class="item__info">
+				<h3>Жилой комплекс «Новое Бутово»</h3>
+				<p>6 км от МКАД, рядом район "Южное бутово". Доступна ипотека, продается по ФЗ-214, рядом с метро. Объект обладает отличной инфраструктурой и является лучшим решением для семейной покупки.</p>
+			</div>
+			<div class="item__icons">
+				<i class="icon_1"></i>
+			</div>
+		</a>
+		<!-- end item -->
+		<!-- begin item  -->
+		<a href='#' class="item">
+			<div class="item__pics">
+				<img src="img/big.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+			</div>
+			<div class="item__info">
+				<h3>Жилой комплекс «Новое Бутово»</h3>
+				<p>6 км от МКАД, рядом район "Южное бутово". Доступна ипотека, продается по ФЗ-214, рядом с метро. Объект обладает отличной инфраструктурой и является лучшим решением для семейной покупки.</p>
+			</div>
+			<div class="item__icons">
+				<i class="icon_1"></i>
+			</div>
+		</a>
+		<!-- end item -->
+	</div>
+	<!-- end items -->
+
+
+	<!-- begin social  -->
+	<div class="social">
+		<span>Поделиться</span> <a href="#" class="social__vimeo"></a><a href="#" class="social__twitter"></a><a href="#" class="social__facebook"></a><a href="#" class="social__googleplus"></a><a href="#" class="social__ok"></a>
+	</div>
+	<!-- end social -->
+
+</div>
+<!-- END out-->
+
+<!-- begin fcallus  -->
+<div class="fcallus"><div class="fcallus__in">
+	<div class="fcallus__phone">+7 495 995-15-25</div>
+	<a href="#" class="fcallus__back"><i></i><span>Обратный звонок</span></a>
+	<a href="#" class="fcallus__mail"><i></i><span>Написать нам</span></a>
+</div></div>
+<!-- end fcallus -->
+
+<!-- begin footer  -->
+<div class="footer"><div class="footer__in">
+	<div class="footer__copy">
+		<div class="footer__logo"></div>
+		<div class="footer__copytext">
+			© 2013, БЕСТ-Новострой.<br>   
+			Все права защищены
+		</div>
+	</div>
+	<div class="footer__nav">
+		<ul>
+			<li><a href="#">новостройки</a></li>
+			<li><a href="#">Покупателям</a></li>
+			<li><a href="#">Застройщикам</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Консалтинг и Аналитика</a></li>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+	<!-- end nav -->
+	<div class="footer__madeby">
+		Запрограммировали в <a href="#">Made In</a> <a href='#' class="footer__madebylogo"></a>
+	</div>
+</div></div>
+<!-- end footer -->
+
+</body>
+</html>

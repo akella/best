@@ -1,0 +1,137 @@
+.header
+	padding-top: 24px 
+	position: relative
+	height: 470px - 24px 
+	.header__logo
+		a
+			position: absolute
+			top: 29px 
+			left: 0 
+			+s(biglogo)
+			float: left
+			+hidetext
+			z-index: 20 
+		
+.nav
+	position: absolute
+	left: 180px 
+	top: 38px
+	ul
+		list-style: none
+		float: left
+		border-left: 1px solid #C8CBCE 
+		a
+			text-decoration: none
+			text-transform: uppercase
+			color: #3B3B3B 
+			font-size: 13px 
+			display: block
+			padding: 3px 14px 
+	.nav__1
+		width: 180px 
+	.nav__2
+		width: 260px 
+	.nav__3
+		width: 160px 
+.mainslider
+	height: 325px 
+	background: url(../img/sot1.png) no-repeat 50% 0 
+	position: absolute
+	top: 152px 
+	left: 0px 
+	width: 100% 
+	.mainslider__slides
+		height: 283px 
+	.mainslider__slide
+		height: 283px 
+		width: 100%
+		float: left 
+		.mainslider__pic
+			position: absolute
+			left: 129px 
+			top: 16px 
+		.mainslider__text
+			position: absolute
+			left: 606px 
+			top: 40px 
+			width: 356px 
+			h2
+				font-size: 42px 
+				+bold
+				color: #3B3B3B
+				text-transform: uppercase
+				line-height: 1.1  
+		.mainslider__sub
+			font-weight: normal
+			margin-top: 4px 
+			+semi
+			font-size: 18px 
+			strong
+				font-weight: normal
+				color: #3DA0D5
+				text-transform: uppercase  
+		.mainslider__info
+			color: #3B3B3B
+			font-size: 13px  
+			margin-bottom: 12px 
+			margin-top: 7px 
+		.mainslider__link
+			font-size: 13px 
+			color: #3B3B3B 
+			
+	.mainslider__next,.mainslider__prev
+		position: absolute
+		top: 104px 
+		+s(next)
+		left: 511px + 10px
+		z-index: 20 
+		cursor: pointer
+	.mainslider__prev
+		+s(prev)
+		left: 70px + 10px
+	.mainslider__pagination
+		position: absolute
+		text-align: center
+		bottom: 0
+		left: 0
+		width: 100%   
+		a
+			display: inline-block
+			margin-right: 6px 
+			width: 11px 
+			height: 11px 
+			vertical-align: middle
+			background: #C1C4C7
+			border-radius: 11px
+			&.is-active,&:hover
+				background: #323C46 
+	
+.callus
+	position: absolute
+	right: 0
+	width: 200px  
+	top: 28px 
+	text-align: center
+	color: #3B3B3B
+	text-decoration: none 
+	font-size: 13px 
+	a
+		color: #3B3B3B
+		text-decoration: none 
+	.callus__back
+		i
+			+s(phone)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 5px 
+		span
+			text-decoration: underline
+			font-size: 13px 
+			color: #3B3B3B 
+	.callus__phone
+		font-size: 23px 
+		font-weight: normal
+		display: block 
+		line-height: 1
+		padding: 5px 0 2px 0  
+	
