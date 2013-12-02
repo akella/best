@@ -2,6 +2,7 @@
 	padding-top: 24px 
 	position: relative
 	height: 470px - 24px 
+
 	.header__logo
 		a
 			position: absolute
@@ -11,6 +12,10 @@
 			float: left
 			+hidetext
 			z-index: 20 
+	&.header_inside
+		height: 140px - 24px
+		.header__logo a
+			+s(logonormal)
 		
 .nav
 	position: absolute
@@ -111,7 +116,7 @@
 	right: 0
 	width: 200px  
 	top: 28px 
-	text-align: center
+	text-align: left
 	color: #3B3B3B
 	text-decoration: none 
 	font-size: 13px 
@@ -133,5 +138,6 @@
 		font-weight: normal
 		display: block 
 		line-height: 1
+		text-indent: -.5em 
 		padding: 5px 0 2px 0  
 	
