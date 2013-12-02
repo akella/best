@@ -234,7 +234,7 @@
 		line-height: 26px 
 .promos
 	margin-right: -20px 
-	margin: 50px -20px 50px 0 
+	margin: 30px -20px 50px 0 
 	+clr
 	.promos__item
 		text-decoration: none
@@ -406,13 +406,13 @@
 		margin-right: 8px 
 	a
 		display: inline-block
-		margin-right: 3px 
+		margin-right: 3px
 		vertical-align: middle
 	@each $s in twitter,facebook,googleplus,vimeo,ok
 		.social__#{$s}
 			+s(s_#{$s})
 			&:hover
-				+s(s_#{$s}h)
+				+si(s_#{$s}h)
 			&:active
-				+s(s_#{$s}a)
+				+si(s_#{$s}a)
 			
