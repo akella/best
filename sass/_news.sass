@@ -1,0 +1,82 @@
+.bc
+	font-size: 13px 
+	color: #3B3B3B 
+	span
+		display: inline-block
+		+s(arrright)
+		margin: 0 4px 0 5px
+	a
+		text-decoration: none
+		color: #98A0A8
+		border-bottom: 1px solid #E8E9EB  
+
+
+.newsitem
+	margin: 36px 0 0 0
+	padding-bottom: 36px 
+	border-bottom: 1px solid #C1C4C7 
+	+clr
+	.newsitem__pic
+		float: left
+		margin-right: 40px 
+	.newsitem__content
+		overflow: hidden
+	.newsitem__meta
+		margin-bottom: 13px
+		color: #536986
+		font-size: 13px 
+		a
+			color: #A0AFBE
+			text-decoration: none
+			border-bottom: 1px solid #BAC5CF    
+	.newsitem__title
+		font-weight: normal
+		+bold
+		color: #3B3B3B
+		font-size: 23px  
+		margin-bottom: 14px 
+	.newsitem__text
+		p
+			margin-bottom: 1em  
+	.newsitem__bottom
+		margin-top: 19px 
+		.newsitem__source
+			float: right
+			padding-top: 5px 
+			text-align: right
+			text-decoration: none 
+			font-size: 14px 
+		.newsitem__sourceicon
+			vertical-align: middle
+			margin-right: 10px 
+			position: relative
+			top: 3px 
+		.newsitem__sourcetitle
+			color: #3B3B3B 
+			margin-right: 21px 
+		.newsitem__sourcelink
+			color: #C4CDD5
+			text-decoration: underline 
+		.newsitem__more
+			text-decoration: none
+			text-transform: uppercase
+			color: #3b3b3b 
+			display: inline-block
+			padding: 6px 15px
+			+bold 
+			+border-radius(4px)
+			background-color: #182a51
+			+background-image(linear-gradient(bottom, #dadada 0%, #edeeef 100%))
+	&.newsitem_single
+		.social
+			float: right
+			text-align: right
+			margin: 0
+			padding-top: 4px  
+		.newsitem__source
+			float: left
+			text-align: left
+.newsitem__megamore
+	@extend %button
+	margin-left: 240px 
+	margin-top: 35px 

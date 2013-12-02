@@ -1,4 +1,28 @@
 // Normally mainpage style
+%button
+	display: inline-block
+	+bold
+	padding: 0 15px 
+	color: #fff
+	text-transform: uppercase
+	font-size: 15px  
+	+border-radius(4px)
+	background-color: #182a51
+	+background-image(linear-gradient(bottom, #5dad19 0%, #97c719 100%))
+	position: relative
+	text-align: center
+	height: 35px 
+	line-height: 35px 
+	cursor: pointer
+	input
+		opacity: 0
+		position: absolute
+		left: 0
+		-webkit-appearance: none
+		top: 0
+		width: 100%
+		height: 100% 
+
 .search
 	margin-top: 82px 
 	margin-bottom: 73px 
@@ -55,30 +79,13 @@
 		opacity: .6 
 		margin-top: 16px 
 	.search__button
-		display: inline-block
-		+bold
-		color: #fff
-		text-transform: uppercase
-		font-size: 15px  
-		+border-radius(4px)
-		background-color: #182a51
-		+background-image(linear-gradient(bottom, #5dad19 0%, #97c719 100%))
-		position: relative
-		width: 150px 
-		text-align: center
-		height: 35px 
-		line-height: 35px 
-		cursor: pointer
+		@extend %button
 		float: right
 		margin-top: 14px 
-		input
-			opacity: 0
-			position: absolute
-			left: 0
-			-webkit-appearance: none
-			top: 0
-			width: 100%
-			height: 100%     
+		width: 150px 
+		padding-left: 0
+		padding-right: 0  
+		
 	.search__place
 		margin-bottom: 20px 
 		height: 31px 
