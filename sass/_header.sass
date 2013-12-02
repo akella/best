@@ -32,6 +32,8 @@
 			font-size: 13px 
 			display: block
 			padding: 3px 14px 
+			&:hover
+				color: #27A9DE 
 	.nav__1
 		width: 180px 
 	.nav__2
@@ -46,15 +48,16 @@
 	left: 0px 
 	width: 100% 
 	.mainslider__slides
-		height: 283px 
+		height: 303px 
 	.mainslider__slide
-		height: 283px 
+		height: 303px 
 		width: 100%
 		float: left 
 		.mainslider__pic
 			position: absolute
 			left: 129px 
 			top: 16px 
+			height: 303px 
 		.mainslider__text
 			position: absolute
 			left: 606px 
@@ -89,18 +92,27 @@
 		top: 104px 
 		+s(next)
 		left: 511px + 10px
-		z-index: 20 
+		z-index: 200
 		cursor: pointer
+	.mainslider__next
+		&:hover
+			+s(nexthover)
+		&:active
+			+s(nextactive)
 	.mainslider__prev
 		+s(prev)
 		left: 70px + 10px
+		&:hover
+			+s(prevhover)
+		&:active
+			+s(prevactive)
 	.mainslider__pagination
 		position: absolute
 		text-align: center
 		bottom: 0
 		left: 0
 		width: 100%   
-		a
+		a,span
 			display: inline-block
 			margin-right: 6px 
 			width: 11px 
@@ -108,8 +120,12 @@
 			vertical-align: middle
 			background: #C1C4C7
 			border-radius: 11px
-			&.is-active,&:hover
+			+hidetext
+			&:hover
+				background: #878C93 
+			&.is-active,&.cycle-pager-active
 				background: #323C46 
+			
 	
 .callus
 	position: absolute
