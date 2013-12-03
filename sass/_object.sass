@@ -1,0 +1,67 @@
+
+.newsitem-list
+	float: left
+	width: 730px 
+
+// tabs-menu
+.tabs-menu
+	float: right
+	width: 210px
+	margin-top: 40px 
+	+box
+	+border-radius(4px)
+	border: 1px solid #d2d2d2
+	ul
+		list-style-type: none 
+.tab-menu__item
+	border-top: 1px solid #d2d2d2
+	&:first-child
+		border-top: none
+		a	
+			+border-radius(4px 4px 0 0)
+	&:last-child
+		a
+			+border-radius(0 0 4px 4px)	 
+	a
+		display: block
+		height: 40px
+		line-height: 40px
+		padding: 0 13px
+		color: #3b3b3b
+		font-size: 13px
+		text-decoration: none  
+		+box
+		background: #F6F6F6
+		+g(#fff, #f0f0f0)
+		&:hover
+			background: #e6e6e6 
+			+g(#fff, #d1d1d1)
+		&:active
+			background: dadada
+			+g(#d1d1d1, #fefefe)
+.tab-menu__item.is-active
+	position: relative
+	border-top: 1px solid #72a215 
+	+box-shadow(0 1px 0 rgba(255,255,255,.75), inset 0 1px 1px rgba(0,0,0,.21))
+	&:before
+		content: ""
+		position: absolute
+		top: 0px
+		left: -14px
+		+s(tab-left)
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		right: -4px
+		width: 4px
+		+border-radius(0 4px 4px 0)
+		background: #87c019  	
+	a	 	
+		font-weight: bold
+		color: #fff
+		background: #87c019
+	&:last-child
+		a
+			+border-radius(0)		 		
