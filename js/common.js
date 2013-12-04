@@ -8,16 +8,26 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 30000,
-      values: [ 1000, 30000 ],
-      slide: function( event, ui ) {
-      	$('.search__pricevalue1').text(ui.values[ 0 ]);
-      	$('.search__pricevalue2').text(ui.values[ 1 ]);
-      }
+    if($("#slider-range").length > 0){
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 30000,
+        values: [ 1000, 30000 ],
+        slide: function( event, ui ) {
+         $('.search__pricevalue1').text(ui.values[ 0 ]);
+         $('.search__pricevalue2').text(ui.values[ 1 ]);
+        }
+      });
+      $('.search__pricevalue1').text($( "#slider-range" ).slider( "values", 0 ));
+      $('.search__pricevalue2').text($( "#slider-range" ).slider( "values", 1 ));
+    }
+	
+
+    // about-gallery
+    $(".about-gallery__img").click(function(){
+      var path = $(this).attr('href');
+      $(".about-gallery__main").html('<img src=' + path + ' alt=""/>');
+      return false;
     });
-    $('.search__pricevalue1').text($( "#slider-range" ).slider( "values", 0 ));
-    $('.search__pricevalue2').text($( "#slider-range" ).slider( "values", 1 ));
 });

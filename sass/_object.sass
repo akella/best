@@ -298,7 +298,7 @@
 			width: 4px
 			height: 4px
 			background: #5f6d76
-.location__img
+.location__img, .about-gallery__nav
 	list-style-type: none
 	text-align: justify
 	line-height: 0
@@ -319,12 +319,64 @@
 		line-height: normal
 		width: 86px 
 		vertical-align: top
-.location__link
+.location__link, .about-gallery__img
 	display: block
 	width: 86px
 	height: 60px
 	+border-radius(4px)
 	overflow: hidden
 	img
-		width: 100%  				   
-	 	
+		width: 100% 
+		
+// about
+.about
+	padding-top: 30px
+.about__top
+	+clr
+.about-gallery
+	width: 365px
+	float: left 			 				   
+.about-info
+	width: 325px
+	float: right
+.about-gallery__main
+	height: 285px
+	overflow: hidden
+	margin-bottom: 6px 
+	+border-radius(4px)
+	img
+		width: 100%
+		height: 100%
+.about-gallery__img
+	position: relative
+	margin-bottom: 6px
+	+opacity(.9)
+	&:hover
+		+opacity(.6)
+	&:active
+		+opacity(1)
+.about-table
+	width: 100%
+	border-collapse: collapse
+	margin-bottom: 20px 
+	tr
+		&:nth-child(2n+1)
+			background: #f1f1f1 	
+	td
+		width: 33%
+		text-align: center
+		line-height: 30px
+		&:first-child
+			+border-radius(4px 0 0 4px)
+		&:last-child
+			+border-radius(0 4px 4px 0)	
+.about-callback
+	padding: 18px 21px 
+	+border-radius(4px)
+	background-color: #879193
+	+box-shadow(0 4px 6px rgba(0,0,0,.25))
+.about-callback__title
+	text-align: center
+	color: #fff
+	font-weight: bold	
+
