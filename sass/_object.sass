@@ -29,7 +29,9 @@
 		display: block
 		height: 40px
 		line-height: 40px
-		padding: 0 13px
+		padding: 0 0 0 13px
+		letter-spacing: -0.5px
+		white-space: nowrap
 		color: #3b3b3b
 		font-size: 13px
 		text-decoration: none  
@@ -181,4 +183,148 @@
 	margin-bottom: 5px 
 	font-size: 24px
 .offer__descr
-	line-height: 1.6 	 			 
+	line-height: 1.6
+
+// infrastructure
+.infrastucture
+	padding: 30px 0 0 
+.infra-map
+	height: 250px
+	margin-bottom: 30px 
+	+border-radius(4px)
+.infra-places
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	&:after
+		content: ""
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+		display: inline-block
+	li
+		display: inline-block
+		text-align: left
+		line-height: normal
+		width: 150px 
+		vertical-align: top
+		padding-bottom: 40px
+		a
+			display: block
+			text-decoration: none
+			font-size: 13px
+			color: #3b3b3b 
+.infra-places__title
+	display: inline-block
+	margin-bottom: 20px 
+	font-weight: bold
+	font-size: 14px 
+	color: #18a8e0	
+	line-height: 1
+	border-bottom: 1px solid #d6ebf7    	 	 			 
+.border-title
+	text-align: center
+	margin-bottom: 30px 
+	span
+		position: relative
+		font-weight: bold
+		font-size: 23px
+		padding: 0 20px 
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 100%
+			width: 3000px 
+			height: 1px
+			background: #c8cbce
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			right: 100%
+			width: 3000px 
+			height: 1px
+			background: #c8cbce
+.location
+	margin-bottom: 60px 			
+.location__list 
+	+clr
+	list-style-type: none 
+.location__item
+	width: 50%
+	float: left
+	padding: 0 30px 0 0px  	
+	+box
+	p
+		margin-top: 20px
+		font-size: 14px
+		&:first-child
+			margin-top: 0   
+	a
+		text-decoration: none
+		font-size: 14px 
+		color: #18a8e0
+		span
+			line-height: 1
+			border-bottom: 1px solid #c5e9f7
+.location__text
+	margin-bottom: 30px 
+	font-size: 14px 			
+.own-transport
+	padding-left: 72px 
+	background: url(../img/car.png) 0px 0px no-repeat 			  		  
+.public-transport
+	padding-left: 72px 
+	background: url(../img/car2.png) 0px 0px no-repeat
+.location__benefits 
+	list-style-type: none
+	padding-left: 14px
+	margin-bottom: 30px
+	li
+		position: relative
+		margin-bottom: 10px 
+		font-weight: bold
+		font-size: 14px  
+		&:before
+			content: ""
+			position: absolute
+			top: 8px
+			left: -14px
+			width: 4px
+			height: 4px
+			background: #5f6d76
+.location__img
+	list-style-type: none
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	&:after
+		content: ""
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+		display: inline-block
+	li
+		display: inline-block
+		text-align: left
+		line-height: normal
+		width: 86px 
+		vertical-align: top
+.location__link
+	display: block
+	width: 86px
+	height: 60px
+	+border-radius(4px)
+	overflow: hidden
+	img
+		width: 100%  				   
+	 	
