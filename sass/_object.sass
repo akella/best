@@ -333,6 +333,7 @@
 	padding-top: 30px
 .about__top
 	+clr
+	margin-bottom: 60px 
 .about-gallery
 	width: 365px
 	float: left 			 				   
@@ -371,12 +372,182 @@
 		&:last-child
 			+border-radius(0 4px 4px 0)	
 .about-callback
-	padding: 18px 21px 
+	padding: 18px 21px
+	margin-bottom: 30px  
 	+border-radius(4px)
 	background-color: #879193
 	+box-shadow(0 4px 6px rgba(0,0,0,.25))
 .about-callback__title
+	margin-bottom: 16px 
 	text-align: center
 	color: #fff
-	font-weight: bold	
-
+	font-weight: bold
+.btn
+	height: 30px
+	line-height: 30px  
+	padding: 0 15px
+	font-weight: bold 
+	text-transform: uppercase
+	color: #fff	
+	border: none
+	outline: none
+	+border-radius(3px)
+	background: #ffd57b
+	+background-image(linear-gradient(bottom, #5dad19 0%, #97c719 100%))
+	cursor: pointer
+	&:hover
+		background: #182a51
+		+background-image(linear-gradient(bottom, #3e930c 0%, #83b50c 100%))
+	&:active
+		background: #182a51
+		+background-image(linear-gradient(bottom, #83b50c 0%, #3e930c 100%))
+.btn_wide
+	height: 36px
+	line-height: 36px  
+	padding: 0 50px
+	font-size: 15px
+	+border-radius(6px)
+.btn_gray
+	color: #676767
+	background: #182a51
+	+background-image(linear-gradient(bottom, #dadada 0%, #edeeef 100%))
+	&:hover
+		background: #182a51
+		+background-image(linear-gradient(bottom, #c7c6c6 0%, #e5e5e6 100%))
+	&:active
+		background: #182a51
+		+background-image(linear-gradient(bottom, #e5e5e6 0%, #c7c6c6 100%))
+.about-callback__contacts
+	font-size: 0 
+.about-callback__col
+	display: inline-block
+	vertical-align: middle
+	font-size: 13px
+	color: #fff
+	span
+		font-size: 18px
+		font-weight: 600
+.about-callback__col_mid
+	margin: 0 10px
+	color: #dadcdd
+.about-info__virtual 
+	margin-bottom: 20px
+.about__map
+	margin-bottom: 60px
+.about__map-wrap
+	margin-bottom: 28px
+	height: 190px  	  
+.about__map-links
+	+clr
+	list-style-type: none
+	margin-bottom: 10s  
+	li
+		width: 50%
+		float: left
+		margin-bottom: 10px  
+	a
+		display: block
+		font-size: 0
+		color: #3b3b3b
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	i
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px 
+	span
+		vertical-align: middle
+		font-size: 14px 	
+.map-metro
+	+s(metro)
+.map-parking
+	+s(parking)
+.map-sport
+	+s(sport)	
+.map-school
+	+s(school)	
+.map-park
+	+s(park)	
+.map-tennis
+	+s(tennis)	
+.map-children
+	+s(children)										
+.about__map-help
+	text-align: center
+	a
+		color: #18a8e0
+		text-decoration: none
+		span
+			line-height: 1
+			border-bottom: 1px solid #d6ebf7
+.special-offer
+	min-height: 53px
+	margin: 60px 2px 
+	padding: 18px 18px 18px 90px 
+	border: 1px solid #b1bfcf
+	@include border-radius(6px)
+	background: url(../img/star.png) 12px 9px no-repeat 
+	+box-shadow(0 0 0 2px #d5e1e9)
+.special-offer__title
+	margin-bottom: 8px 
+	font-size: 20px
+	font-weight: 500 	
+.special-offer__text
+	font-size: 14px
+	span
+		display: inline-block
+		margin-left: 9px
+		i
+			font-style: normal
+			font-size: 20px
+			font-weight: 500
+.advisers
+	margin-bottom: 60px 			
+.advisers-list
+	font-size: 0 
+	list-style-type: none
+	li
+		vertical-align: top
+.adviser
+	width: 33%
+	display: inline-block 	
+.adviser__name
+	font-size: 15px
+	font-weight: bold
+	margin-bottom: 7px 
+.adviser__post
+	margin-bottom: 20px
+	font-size: 13px 
+.adviser__phone
+	margin-bottom: 11px
+	font-size: 14px  	 	 	
+.ico-phone
+	display: inline-block
+	margin-right: 15px 
+	+s(phone2)
+.adviser__mail
+	a
+		color: #18a8e0
+		font-size: 14px 
+		text-decoration: none
+		span
+			line-height: 1
+			border-bottom: 1px solid #d6ebf7  	
+.ico-mail
+	display: inline-block
+	margin-right: 15px
+	+s(mail2)
+.description-wrap
+	-moz-column-count: 2
+	-webkit-column-count: 2
+	column-count: 2
+.description__img
+	margin-bottom: 36px 		 	
+.description__info
+	font-size: 14px
+	margin-bottom: 30px 
+	li
+		margin-bottom: 7px 	
+.description__text
+	margin-bottom: 25px 		
