@@ -1,0 +1,72 @@
+.oinside
+	overflow: hidden
+	padding-left: 37px 
+	.oinside__price
+		color: #1D9C19
+		font-size: 18px  
+	.oinside__address
+		float: right
+		color: #3B3B3B
+		font-size: 13px  
+		padding-top: 5px 
+		i
+			display: inline-block
+			+s(home)
+			margin-right: 5px 
+			vertical-align: middle
+			position: relative
+			top: -2px 
+	.oinside__text
+		clear: both
+		padding-top: 35px 
+		font-size: 14px
+		overflow: hidden
+		p
+			margin-bottom: 1em
+		ul
+			float: left
+			width: 45%
+			padding-right: 5% 
+			list-style: none
+			li
+				margin-bottom: .6em 
+				position: relative
+				padding-left: 16px 
+				&:before
+					position: absolute
+					left: 0
+					top: .5em  
+					content: ' '
+					+s(bul)
+.order
+	border-radius: 4px
+	background-color: #879193
+	+box-shadow(0 4px 6px rgba(0,0,0,.25))
+	padding: 18px 21px
+	font-size: 14px 
+	color: #FFFFFF
+	+clr
+	.order__name
+		float: left
+		padding-top: 5px 
+	.order__contact
+		float: right
+		*
+			vertical-align: middle
+		span
+			font-size: 12px 
+			color: #DADCDD 
+	.order__phone
+		display: inline-block
+		font-size: 12px 
+		margin-right: 10px 
+		span
+			font-size: 18px 
+			color: #fff
+			margin-left: 7px  
+	.order__button
+		@extend %button
+		text-decoration: none
+		font-weight: normal
+		margin-left: 10px 
+				
