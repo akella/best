@@ -546,7 +546,7 @@ a img, fieldset { border: none; }
 .oinside .oinside__price { color: #1d9c19; font-size: 18px; }
 .oinside .oinside__address { float: right; color: #3b3b3b; font-size: 13px; padding-top: 5px; }
 .oinside .oinside__address i { display: inline-block; background: url('../img/icons-sf36e0f5ece.png') 0 -1765px no-repeat; width: 16px; height: 16px; margin-right: 5px; vertical-align: middle; position: relative; top: -2px; }
-.oinside .oinside__text { clear: both; padding-top: 35px; font-size: 14px; overflow: hidden; }
+.oinside .oinside__text { clear: both; padding-top: 35px; font-size: 14px; overflow: hidden; padding-bottom: 15px; }
 .oinside .oinside__text p { margin-bottom: 1em; }
 .oinside .oinside__text ul { float: left; width: 45%; padding-right: 5%; list-style: none; }
 .oinside .oinside__text ul li { margin-bottom: 0.6em; position: relative; padding-left: 16px; }
