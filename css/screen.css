@@ -206,6 +206,14 @@ a img, fieldset { border: none; }
 .items .item .item__info h3 { font-weight: normal; font-family: "pbold", arial, sans-serif; font-size: 15px; margin-bottom: 1em; }
 .items .item .item__icons { float: right; }
 .items .item .item__icons .icon_1 { background: url('../img/icons-s15b24d4be6.png') 0 -156px no-repeat; width: 90px; height: 92px; display: inline-block; }
+.items .item_vtor .item__info { overflow: hidden; width: auto; }
+.items .item_vtor .item__title { font-size: 14px; margin-bottom: 13px; color: #3b3b3b; font-family: "pbold", arial, sans-serif; }
+.items .item_vtor .item__data { float: left; list-style: none; }
+.items .item_vtor .item__data b { color: #1d9c19; font-weight: normal; font-family: "pbold", arial, sans-serif; }
+.items .item_vtor .item__data strong { font-weight: normal; font-family: "pbold", arial, sans-serif; }
+.items .item_vtor .item__data1 { width: 225px; }
+.items .item_vtor .item__data2 { width: 235px; }
+.items .item_vtor .item__data3 { width: 150px; }
 
 .social { font-size: 13px; vertical-align: middle; margin: 30px 0; }
 .social span { margin-right: 8px; }
