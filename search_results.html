@@ -1,0 +1,364 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/common.js"></script>
+	<style>
+	</style>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- begin header  -->
+	<div class="header header_inside">
+		<h1 class="header__logo"><a href="#">Бест новострой</a></h1>
+		<!-- begin nav -->
+		<div class="nav">
+			<ul class="nav__1">
+				<li><a href="#">новостройки</a></li>
+				<li><a href="#">Покупателям</a></li>
+			</ul>
+			<ul class="nav__2">
+				<li><a href="#">Застройщикам</a></li>
+				<li><a href="#">Консалтинг и Аналитика</a></li>
+			</ul>
+			<ul class="nav__3">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<!-- end nav -->
+		<a href='#' class="callus">
+			<div class="callus__back"><i></i><span>Обратный звонок</span></div>
+			<div class="callus__phone">+7 495 995-15-25</div>
+			<div class="callus__answer">Отвечаем на вопросы</div>
+		</a>
+
+		
+	</div>
+	<!-- end header -->
+
+
+	<div class="bc"><a href="#">Главная</a><span></span>Новостройки</div>
+
+	
+	<!-- begin search  -->
+	<div class="search search_advanced">
+		<!-- begin search__form  -->
+		<div class="search__form">
+			<h3>Поиск недвижимости</h3>
+			<div class="search__form">
+				<form action="/">
+					<nav class="search__nav">
+						<a href="#" class="is-active">Квартиры</a><div class="sep"></div><a href="#">Коттеджи</a><div class="sep"></div><a href="#">коммерческая</a>
+					</nav>
+					<div class="search__col1">
+						<!-- begin place -->
+						<div class="search__place">
+							<label for="">Местоположение</label>
+							<div class="select">
+								<div class="select__value">Москва</div>
+								<i class="select__arr"></i>
+								<select name="" id="">
+									<option value="">Москва</option>
+								</select>
+							</div>
+						</div>
+						<!-- end place -->
+						<!-- begin place -->
+						<div class="search__room">
+							<label for="" class="search__roomlabel">Кол-во комнат</label>
+							<div class="room">
+								<label for="" class="is-active"><i></i><input type="checkbox" name="" checked id="">1</label><label for=""><i></i><input type="checkbox" name="" id="">2</label>
+								<label for=""><i></i><input type="checkbox" name="" id="">3</label><label for=""><i></i><input type="checkbox" name="" id="">4</label>
+							</div>
+						</div>
+						<!-- end place -->
+					</div>
+					<!-- end col -->
+					<!-- begin search__col2  -->
+					<div class="search__col2">
+						<div class="search__price">
+							<label for="">Цена общая</label>
+							<div class="search__pricelabel1">
+								от
+							</div>
+							<div class="search__pricevalue1">3000000</div>
+							<div class="search__pricelabel2">
+								до
+							</div>
+							<div class="search__pricevalue2">10000000</div>
+							<div class="search__pricecurrency">руб.</div>
+						</div>
+						<div class="search__pricerange">
+							<div id="slider-range"></div>
+						</div>
+					</div>
+					<!-- end search__col2 -->
+					<div class="clr"></div>
+					<!-- begin search__more  -->
+					<div class="search__more">
+						<div class="search__col1">
+							<div class="search__range">
+								<label for="">Этаж</label>
+								<div class="search__pricelabel1">
+									от
+								</div>
+								<div class="search__pricevalue1">1</div>
+								<div class="search__pricelabel2">
+									до
+								</div>
+								<div class="search__pricevalue2">15</div>
+								
+							</div>
+							<div class="search__pricerange">
+								<div id="slider-range"></div>
+							</div>
+						</div>
+						<!-- end col -->
+						<!-- begin search__col2  -->
+						<div class="search__col2">
+							<div class="search__range">
+								<label for="">Цена м<sup>2</sup></label>
+								<div class="search__pricelabel1">
+									от
+								</div>
+								<div class="search__pricevalue1">10</div>
+								<div class="search__pricelabel2">
+									до
+								</div>
+								<div class="search__pricevalue2">80</div>
+								<div class="search__pricecurrency">м<sup>2</sup></div>
+							</div>
+							<div class="search__pricerange">
+								<div id="slider-range"></div>
+							</div>
+						</div>
+						<!-- end search__col2 -->
+						<div class="clr"></div>
+						<div class="search__col1">
+							<div class="search__range">
+								<label for="">Площадь</label>
+								<div class="search__pricelabel1">
+									от
+								</div>
+								<div class="search__pricevalue1">10</div>
+								<div class="search__pricelabel2">
+									до
+								</div>
+								<div class="search__pricevalue2">80</div>
+								<div class="search__pricecurrency">м<sup>2</sup></div>
+							</div>
+							<div class="search__pricerange">
+								<div id="slider-range"></div>
+							</div>
+						</div>
+						<!-- end col -->
+						<div class="clr"></div>
+					</div>
+					<!-- end search__more -->
+					<a href='#' class="search__advanced js-show" hidden>Расширенный поиск</a>
+					<a href="#" class="search__advanced js-hide">Свернуть расширенный поиск</a>
+					<div class="search__button">Найти<input type="submit"></div>
+				</form>
+			</div>
+		</div>
+		<!-- end search__form -->
+		<!-- begin search__map  -->
+		<a href="#" class="search__map">
+			<h3>Карта объектов</h3>
+			<div class="search__mapimg">
+				<iframe width='264px' height='200px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/akella.gfjehkfj/mm/zoompan,zoomwheel.html?secure=1#8/50.078/30.723'></iframe>
+			</div>
+			<div class="search__maplink">смотреть на карте</div>
+		</a>
+		<!-- end search__map -->
+	</div>
+	<!-- end search -->
+
+
+	<!-- begin filters  -->
+	<div class="filters">
+		<ul>
+			<li class="filters__1"><a href="#">Все новостройки</a></li>
+			<li class="filters__2"><a href="#">Новостройки Москвы</a></li>
+			<li class="filters__3"><a href="#">Новостройки Новой Москвы </a></li>
+			<li class="filters__4"><a href="#">Новостройки Подмосковья</a></li>
+			<li class="filters__5"><a  class="is-active" href="#">Вторичное жилье</a></li>
+		</ul>
+	</div>
+	<!-- end filters -->
+
+	<!-- begin items  -->
+	<div class="items">
+		<!-- begin item  -->
+		<a href='#' class="item item_vtor">
+			<div class="item__pics">
+				<img src="img/big.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+			</div>
+			<div class="item__info">
+				<div class="item__title">2-комн., ул. Академика Грушина, д. 3, г. Химки</div>
+				<ul class="item__data item__data1">
+					<li>Цена: <strong><b>3 450 000 руб.</b></strong></li>
+					<li>Город: <strong>Химки</strong></li>
+					<li>Улица: <strong>Красноармейская, 18</strong></li>
+				</ul>
+				<ul class="item__data item__data2">
+					<li>Метро: <strong>Речной вокзал</strong></li>
+					<li>Время до метро: <strong>20 мин.</strong></li>
+					<li>Этаж: <strong>5 из 9</strong></li>
+				</ul>
+				<ul class="item__data item__data3">
+					<li>Комнат: <strong>1</strong></li>
+					<li>Площадь: <strong>44 кв.м.</strong></li>
+					<li>Из них жилая: <strong>25 кв.м.</strong></li>
+				</ul>
+			</div>
+		</a>
+		<!-- end item -->
+		<!-- begin item  -->
+		<a href='#' class="item item_vtor">
+			<div class="item__pics">
+				<img src="img/big.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+			</div>
+			<div class="item__info">
+				<div class="item__title">2-комн., ул. Академика Грушина, д. 3, г. Химки</div>
+				<ul class="item__data item__data1">
+					<li>Цена: <strong><b>3 450 000 руб.</b></strong></li>
+					<li>Город: <strong>Химки</strong></li>
+					<li>Улица: <strong>Красноармейская, 18</strong></li>
+				</ul>
+				<ul class="item__data item__data2">
+					<li>Метро: <strong>Речной вокзал</strong></li>
+					<li>Время до метро: <strong>20 мин.</strong></li>
+					<li>Этаж: <strong>5 из 9</strong></li>
+				</ul>
+				<ul class="item__data item__data3">
+					<li>Комнат: <strong>1</strong></li>
+					<li>Площадь: <strong>44 кв.м.</strong></li>
+					<li>Из них жилая: <strong>25 кв.м.</strong></li>
+				</ul>
+			</div>
+		</a>
+		<!-- end item -->
+		<!-- begin item  -->
+		<a href='#' class="item item_vtor">
+			<div class="item__pics">
+				<img src="img/big.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+			</div>
+			<div class="item__info">
+				<div class="item__title">2-комн., ул. Академика Грушина, д. 3, г. Химки</div>
+				<ul class="item__data item__data1">
+					<li>Цена: <strong><b>3 450 000 руб.</b></strong></li>
+					<li>Город: <strong>Химки</strong></li>
+					<li>Улица: <strong>Красноармейская, 18</strong></li>
+				</ul>
+				<ul class="item__data item__data2">
+					<li>Метро: <strong>Речной вокзал</strong></li>
+					<li>Время до метро: <strong>20 мин.</strong></li>
+					<li>Этаж: <strong>5 из 9</strong></li>
+				</ul>
+				<ul class="item__data item__data3">
+					<li>Комнат: <strong>1</strong></li>
+					<li>Площадь: <strong>44 кв.м.</strong></li>
+					<li>Из них жилая: <strong>25 кв.м.</strong></li>
+				</ul>
+			</div>
+		</a>
+		<!-- end item -->
+		<!-- begin item  -->
+		<a href='#' class="item item_vtor">
+			<div class="item__pics">
+				<img src="img/big.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+				<img src="img/small.jpg" alt="">
+			</div>
+			<div class="item__info">
+				<div class="item__title">2-комн., ул. Академика Грушина, д. 3, г. Химки</div>
+				<ul class="item__data item__data1">
+					<li>Цена: <strong><b>3 450 000 руб.</b></strong></li>
+					<li>Город: <strong>Химки</strong></li>
+					<li>Улица: <strong>Красноармейская, 18</strong></li>
+				</ul>
+				<ul class="item__data item__data2">
+					<li>Метро: <strong>Речной вокзал</strong></li>
+					<li>Время до метро: <strong>20 мин.</strong></li>
+					<li>Этаж: <strong>5 из 9</strong></li>
+				</ul>
+				<ul class="item__data item__data3">
+					<li>Комнат: <strong>1</strong></li>
+					<li>Площадь: <strong>44 кв.м.</strong></li>
+					<li>Из них жилая: <strong>25 кв.м.</strong></li>
+				</ul>
+			</div>
+		</a>
+		<!-- end item -->
+	</div>
+	<!-- end items -->
+
+
+	<!-- begin social  -->
+	<div class="social">
+		<span>Поделиться</span> <a href="#" class="social__vimeo"></a><a href="#" class="social__twitter"></a><a href="#" class="social__facebook"></a><a href="#" class="social__googleplus"></a><a href="#" class="social__ok"></a>
+	</div>
+	<!-- end social -->
+
+</div>
+<!-- END out-->
+
+<!-- begin fcallus  -->
+<div class="fcallus"><div class="fcallus__in">
+	<div class="fcallus__phone">+7 495 995-15-25</div>
+	<a href="#" class="fcallus__back"><i></i><span>Обратный звонок</span></a>
+	<a href="#" class="fcallus__mail"><i></i><span>Написать нам</span></a>
+</div></div>
+<!-- end fcallus -->
+
+<!-- begin footer  -->
+<div class="footer"><div class="footer__in">
+	<div class="footer__copy">
+		<div class="footer__logo"></div>
+		<div class="footer__copytext">
+			© 2013, БЕСТ-Новострой.<br>   
+			Все права защищены
+		</div>
+	</div>
+	<div class="footer__nav">
+		<ul>
+			<li><a href="#">новостройки</a></li>
+			<li><a href="#">Покупателям</a></li>
+			<li><a href="#">Застройщикам</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Консалтинг и Аналитика</a></li>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+	<!-- end nav -->
+	<div class="footer__madeby">
+		Запрограммировали в <a href="#">Made In</a> <a href='#' class="footer__madebylogo"></a>
+	</div>
+</div></div>
+<!-- end footer -->
+
+</body>
+</html>

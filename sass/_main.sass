@@ -31,6 +31,8 @@
 	+box-shadow(0 4px 6px rgba(0,0,0,.25))
 	border-radius: 10px
 	height: 234px 
+	&.search_advanced
+		height: 417px 
 .search__form
 	position: relative
 	h3
@@ -41,6 +43,8 @@
 		left: 20px  
 		top: -45px 
 		position: absolute
+		.search_advanced &
+			left: 0 
 	form
 		width: 645px 
 		padding: 20px 0 0 20px
@@ -68,6 +72,10 @@
 		width: 330px 
 		float: left
 		border-right: 1px solid #929B9E 
+	.search__more
+		margin-top: 22px 
+		.search__col1
+			border: none 
 	.search__col2
 		float: right
 		width: 292px
@@ -159,10 +167,11 @@
 				margin-right: 6px 
 				position: relative
 				top: -1px 
-	.search__price
+	.search__price,.search__range
 		position: relative
 		height: 31px 
 		margin-bottom: 20px 
+		width: 292px 
 		label,.search__pricelabel1, .search__pricelabel2
 			margin-bottom: 20px 
 			float: left
@@ -191,10 +200,12 @@
 			border-radius: 0 4px 4px 0
 		.search__pricecurrency
 			position: absolute
-			right: -29px 
+			right: -41px 
 			top: 6px 
 			color: #fff 
 			font-size: 12px 
+			width: 3em
+			text-align: left 
 	.search__pricerange
 		background: #737D81 
 		
@@ -204,12 +215,28 @@
 	position: absolute
 	right: 0
 	top: 0
+	bottom: 0 
 	border-radius: 0 10px 10px 0  
 	.search__mapimg
 		border-radius: 0 10px 10px 0
 		overflow: hidden
 		height: 234px 
 		width: 264px 
+		iframe
+			border-radius: 0 10px 10px 0  
+		.search_advanced &
+			height: auto 
+			bottom: 0
+			iframe
+				height: 100% !important
+				bottom: 0
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				top: 0     
+				
+		 
 	h3
 		font-size: 15px 
 		font-weight: normal
