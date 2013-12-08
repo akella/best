@@ -131,7 +131,7 @@ a img, fieldset { border: none; }
 .search__form .search__nav .sep { display: inline-block; vertical-align: middle; height: 22px; border-left: 1px solid #4d555c; position: relative; top: -1px; }
 .search__form .search__col1 { width: 330px; float: left; border-right: 1px solid #929b9e; }
 .search__form .search__more { margin-top: 22px; }
-.search__form .search__more .search__col1 { border: none; }
+.search__form .search__more .search__col1 { border: none; margin-bottom: 25px; }
 .search__form .search__col2 { float: right; width: 292px; }
 .search__form .clr { clear: both; }
 .search__form .search__advanced { float: left; color: white; opacity: 0.6; margin-top: 16px; }
@@ -148,13 +148,14 @@ a img, fieldset { border: none; }
 .search__form .search__room .room label.is-active i { background: url('../img/icons-sf36e0f5ece.png') 0 -2191px no-repeat; width: 20px; height: 19px; }
 .search__form .search__room .room input { display: none; }
 .search__form .search__room .room i { background: url('../img/icons-sf36e0f5ece.png') 0 -2242px no-repeat; width: 20px; height: 19px; vertical-align: middle; display: inline-block; margin-right: 6px; position: relative; top: -1px; }
-.search__form .search__price, .search__form .search__range { position: relative; height: 31px; margin-bottom: 20px; width: 292px; }
-.search__form .search__price label, .search__form .search__price .search__pricelabel1, .search__form .search__price .search__pricelabel2, .search__form .search__range label, .search__form .search__range .search__pricelabel1, .search__form .search__range .search__pricelabel2 { margin-bottom: 20px; float: left; height: 31px; font-size: 12px; line-height: 31px; background: #697a7f; color: white; width: 79px; padding-left: 11px; border-radius: 4px 0 0 4px; border-right: 1px solid #606769; }
-.search__form .search__price .search__pricelabel1, .search__form .search__price .search__pricelabel2, .search__form .search__range .search__pricelabel1, .search__form .search__range .search__pricelabel2 { width: 29px; padding: 0; text-align: center; border-radius: 0; }
-.search__form .search__price .search__pricevalue1, .search__form .search__price .search__pricevalue2, .search__form .search__range .search__pricevalue1, .search__form .search__range .search__pricevalue2 { float: left; width: 70px; background: white; height: 31px; line-height: 31px; text-align: center; }
-.search__form .search__price .search__pricevalue2, .search__form .search__range .search__pricevalue2 { border-radius: 0 4px 4px 0; }
-.search__form .search__price .search__pricecurrency, .search__form .search__range .search__pricecurrency { position: absolute; right: -41px; top: 6px; color: white; font-size: 12px; width: 3em; text-align: left; }
-.search__form .search__pricerange { background: #737d81; }
+.search__form .search__range { position: relative; height: 31px; margin-bottom: 20px; width: 292px; }
+.search__form .search__range label, .search__form .search__range .search__rangelabel2, .search__form .search__range .search__rangelabel1 { margin-bottom: 20px; float: left; height: 31px; font-size: 12px; line-height: 31px; background: #697a7f; color: white; width: 79px; padding-left: 11px; border-radius: 4px 0 0 4px; border-right: 1px solid #606769; }
+.search__form .search__range label sup, .search__form .search__range .search__rangelabel2 sup, .search__form .search__range .search__rangelabel1 sup { vertical-align: top; line-height: 1; position: relative; top: 5px; }
+.search__form .search__range .search__rangelabel1, .search__form .search__range .search__rangelabel2 { width: 29px; padding: 0; text-align: center; border-radius: 0; }
+.search__form .search__range .search__rangevalue1, .search__form .search__range .search__rangevalue2 { float: left; width: 70px; background: white; height: 31px; line-height: 31px; text-align: center; }
+.search__form .search__range .search__rangevalue2 { border-radius: 0 4px 4px 0; }
+.search__form .search__range .search__rangecurrency { position: absolute; right: -41px; top: 6px; color: white; font-size: 12px; width: 3em; text-align: left; }
+.search__form .search__pricerange, .search__form .search__rangerange { background: #737d81; width: 292px; }
 
 .search__map { float: right; width: 264px; position: absolute; right: 0; top: 0; bottom: 0; border-radius: 0 10px 10px 0; }
 .search__map .search__mapimg { border-radius: 0 10px 10px 0; overflow: hidden; height: 234px; width: 264px; }

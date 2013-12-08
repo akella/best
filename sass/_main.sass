@@ -76,6 +76,7 @@
 		margin-top: 22px 
 		.search__col1
 			border: none 
+			margin-bottom: 25px 
 	.search__col2
 		float: right
 		width: 292px
@@ -167,12 +168,12 @@
 				margin-right: 6px 
 				position: relative
 				top: -1px 
-	.search__price,.search__range
+	.search__range
 		position: relative
 		height: 31px 
 		margin-bottom: 20px 
 		width: 292px 
-		label,.search__pricelabel1, .search__pricelabel2
+		label,.search__rangelabel2,.search__rangelabel1
 			margin-bottom: 20px 
 			float: left
 			height: 31px 
@@ -184,21 +185,26 @@
 			padding-left: 11px    
 			border-radius: 4px 0 0 4px
 			border-right: 1px solid #606769 
-		.search__pricelabel1,.search__pricelabel2
+			sup
+				vertical-align: top
+				line-height: 1
+				position: relative
+				top: 5px  
+		.search__rangelabel1,.search__rangelabel2
 			width: 29px 
 			padding: 0
 			text-align: center 
 			border-radius: 0
-		.search__pricevalue1,.search__pricevalue2
+		.search__rangevalue1,.search__rangevalue2
 			float: left
 			width: 70px 
 			background: #fff 
 			height: 31px 
 			line-height: 31px
 			text-align: center
-		.search__pricevalue2
+		.search__rangevalue2
 			border-radius: 0 4px 4px 0
-		.search__pricecurrency
+		.search__rangecurrency
 			position: absolute
 			right: -41px 
 			top: 6px 
@@ -206,8 +212,9 @@
 			font-size: 12px 
 			width: 3em
 			text-align: left 
-	.search__pricerange
+	.search__pricerange,.search__rangerange
 		background: #737D81 
+		width: 292px 
 		
 .search__map
 	float: right
