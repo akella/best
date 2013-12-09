@@ -14,6 +14,12 @@
 	height: 35px 
 	line-height: 35px 
 	cursor: pointer
+	&:hover
+		background-color: #182a51
+		+background-image(linear-gradient(bottom, #3e930c 0%, #83b50c 100%))
+	&:active, &.is-active
+		background-color: #182a51
+		@include background-image(linear-gradient(bottom, #83b50c 0%, #3e930c 100%))
 	input
 		opacity: 0
 		position: absolute
@@ -394,6 +400,8 @@
 			line-height: 30px
 			padding: 0 15px  
 			text-decoration: none
+			&:hover
+				color: #1D9C19 
 			&.is-active
 				color: #fff 
 				background-color: #87bf19
@@ -437,9 +445,15 @@
 				margin-bottom: 1em 
 		.item__icons
 			float: right
-			.icon_1
-				+s(icon_1)
+			width: 100px 
+			i
 				display: inline-block
+				margin-right: 7px 
+				margin-bottom: 7px 
+				vertical-align: top
+			@for $s from 1 through 8
+				.icon_#{$s}
+					+s(i#{$s})
 	.item_vtor
 		.item__info
 			overflow: hidden

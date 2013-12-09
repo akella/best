@@ -80,11 +80,11 @@ $(document).ready(function() {
 
     //gallery
     
-    jQuery(function(){
-      jQuery('.scroll-pane').jScrollPane({
+
+      $('.scroll-pane').jScrollPane({
         horizontalDragMaxWidth: 50
       });
-    });
+
 
 
 });
