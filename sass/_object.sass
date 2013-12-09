@@ -715,7 +715,123 @@
 	text-decoration: underline
 .document__info
 	color: #777a7f
-	
-	
+
+// object
+.object__nav
+	float: left
+	width: 208px
+	padding-top: 30px 
+.housing
+	float: right	
+	width: 522px
+	padding-top: 30px 
+.left-menu
+	width: 153px
+	text-align: right
+	margin-bottom: 40px 
+.left-menu__title
+	margin-bottom: 18px 
+	font-size: 18px
+	font-weight: bold	 	 
+.left-menu__list
+	list-style-type: none
+	a
+		position: relative
+		display: block
+		height: 28px
+		line-height: 26px 
+		+box
+		+border-radius(2px)
+		padding-right: 4px  
+		color: #18a8e0
+		text-decoration: none
+		span
+			border-bottom: 1px solid #d6ebf7
+	a.is-active
+		color: #fff
+		background: #87bf19
+		+box-shadow(0 1px 0 rgba(255,255,255,.75), inset 0 1px 1px rgba(0,0,0,.21))
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			right: -13px
+			+s(tab-right_sm)
+		span
+			border-bottom: none
+.housing
+	overflow: hidden
+	.documents__list
+		margin-bottom: 60px 			
+.housing__img
+	margin-bottom: 60px 
+	img
+		width: 100%
+		height: auto
+.housing__text
+	margin-bottom: 26px
+	ul
+		margin-bottom: 36px 
+	li
+		position: relative
+		padding-left: 16px
+		margin-bottom: 16px 
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			left: 0
+			width: 4px
+			height: 4px
+			background: #5f6d76
+.housing__plans
+	margin-bottom: 60px 			 
+.plans-tabs
+	margin-bottom: 35px 	
+.plans-tabs__nav
+	list-style-type: none
+	text-align: center
+	margin-bottom: 40px 
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 0 18px
+		a
+			color: #18a8e0
+			font-size: 14px
+			text-decoration: none
+			span
+				border-bottom: 1px solid #d6ebf7
+		a.is-active
+			color: #3b3b3b
+			font-weight: bold
+			span
+				border-bottom: none
+.plans-tabs__content
+	text-align: center
+.h4
+	font-size: 18px
+	margin-bottom: 15px
+
+// gallery
+.gallery-preview
+	padding-top: 42px
+	margin-bottom: 10px
+	+box-shadow(0px 1px 1px #ccc)  
+	ul
+		+clr
+		white-space: nowrap
+	li
+		width: 108px 
+		display: inline-block
+		vertical-align: top
+		+box
+		padding: 10px
+.gallery-photo
+	img
+		width: 100%
+		height: auto
+		+border-radius(3px)  			
+
    		 		
 		 	 		

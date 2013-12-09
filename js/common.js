@@ -71,9 +71,20 @@ $(document).ready(function() {
 	
 
     // about-gallery
-    $(".about-gallery__img").click(function(){
+    
+    $(".js-preview-picture").click(function(){
       var path = $(this).attr('href');
-      $(".about-gallery__main").html('<img src=' + path + ' alt=""/>');
+      $(".js-picture").html('<img src=' + path + ' alt=""/>');
       return false;
     });
+
+    //gallery
+    
+    jQuery(function(){
+      jQuery('.scroll-pane').jScrollPane({
+        horizontalDragMaxWidth: 50
+      });
+    });
+
+
 });
