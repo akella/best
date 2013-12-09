@@ -680,3 +680,4 @@ a img, fieldset { border: none; }
 .monitoring .monitoring__title { font-size: 23px; font-family: "pbold", arial, sans-serif; line-height: 1; margin-bottom: 1em; }
 .monitoring .monitoring__title a { color: inherit; text-decoration: none; }
 .monitoring .monitoring__title a:hover { text-decoration: underline; }
+.monitoring .monitoring__text { margin-bottom: 25px; }
