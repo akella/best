@@ -1,0 +1,225 @@
+.h3
+	margin-top: 50px 
+	border-top: 1px solid #C1C4C7
+	text-align: center
+	font-size: 23px 
+	margin-bottom: 5px 
+	+bold
+	span
+		display: inline-block
+		background: #fff
+		padding: 0 10px
+		position: relative
+		top: -17px   
+
+
+.b
+	margin-bottom: 15px 
+	.b__content
+		font-size: 14px 
+		color: #3B3B3B
+		p
+			margin-bottom: 1em 
+.iconlist
+	+clr
+	margin: 26px 0
+	.iconlist__item
+		float: left
+		width: 33%
+		+bold
+		font-size: 17px  
+		color: #3B3B3B 
+		padding-left: 60px 
+		position: relative
+		+box-sizing(border-box)
+		i
+			display: inline-block
+			position: absolute
+			left: 0 
+@for $i from 1 through 6
+	.icon__#{$i}
+		+s(icon__#{$i})
+
+
+
+.timeline
+	width: 714px  
+	margin: 60px auto 40px auto
+	height: 140px 
+	position: relative
+	.timeline__track
+		height: 6px 
+		background: #F1F1F1 
+	.timeline__item
+		position: absolute
+		width: 210px 
+		text-align: center
+		display: inline-block
+		vertical-align: top
+		font-size: 14px 
+		color: #3B3B3B
+		padding-top: 30px 
+		&.timeline__item1
+			left: -105px 
+		&.timeline__item2
+			left: 125px 
+		&.timeline__item3
+			right: 125px 
+		&.timeline__item4
+			right: -105px 
+		.timeline__year
+			font-size: 16px 
+			color: #3B3B3B
+			+bold
+			margin-bottom: 15px  
+			display: inline-block
+		.timeline__icon
+			width: 30px 
+			height: 30px 
+			border-radius: 30px
+			background: #F1F1F1
+			position: absolute
+			left: 50%
+			margin-left: -(30px/2)
+			top: -17px 
+			i
+				position: absolute
+				left: 10px 
+				top: 10px 
+				width: 10px 
+				height: 10px 
+				background: #323C46 
+				border-radius: 10px
+.cols
+	+clr
+	.col
+		float: left
+		width: 29%
+		padding-right: 4%  
+.b_vacancy
+	p
+		margin-bottom: 1.2em 
+		font-size: 13px 
+	ul
+		list-style: none
+		font-size: 14px 
+		li
+			margin-bottom: 10px 
+			position: relative
+		a
+			color: #27A9DE
+			display: block 
+			position: relative
+			&:before
+				position: absolute
+				width: 4px 
+				height: 4px 
+				background: #5F6D75
+				left: -13px  
+				top: .5em
+				content: ' ' 
+	.vacancycontact
+		p
+			margin-bottom: 1.4em 
+		a
+			color: #1D9C19
+			text-decoration: none
+			border-bottom: 1px solid #99CB97  
+.b__multicols
+	+column-count(3)
+	+column-gap(40px)
+	p
+		margin-bottom: 1.2em
+.awards
+	+clr
+	margin-right: -50px 
+	.award
+		float: left
+		width: 140px 
+		margin-right: 32px 
+		text-decoration: none
+		color: #27A9DE 
+		text-align: center
+		.award__pic
+			margin-bottom: 14px 
+		.award__title
+			color: #27A9DE 
+			text-decoration: underline
+
+
+.onas
+	position: relative
+	padding-bottom: 30px 
+	.onas__slides
+		width: 824px 
+		margin: 0 auto 
+	.onas__slide
+		width: 824px 
+	.onas__next,.onas__prev
+		position: absolute
+		top: 50%
+		margin-top: -50px 
+		+s(next)
+		z-index: 200
+		cursor: pointer
+		+hidetext
+	.onas__next
+		right: 0 
+		&:hover
+			+s(nexthover)
+		&:active
+			+s(nextactive)
+	.onas__prev
+		+s(prev)
+		left: 0 
+		&:hover
+			+s(prevhover)
+		&:active
+			+s(prevactive)
+	.onas__pagination
+		position: absolute
+		text-align: center
+		bottom: 0
+		left: 0
+		width: 100%   
+		a,span
+			display: inline-block
+			margin-right: 6px 
+			width: 11px 
+			height: 11px 
+			vertical-align: middle
+			background: #C1C4C7
+			border-radius: 11px
+			+hidetext
+			&:hover
+				background: #878C93 
+			&.is-active,&.cycle-pager-active
+				background: #323C46 
+
+
+
+.smi
+	float: left
+	width: 29%
+	padding-right: 4%   
+	.smi__feedback
+		color: #3B3B3B 
+		font-size: 14px 
+	.smi__link
+		text-decoration: none
+		display: block
+		margin-top: 16px 
+		.smi__title
+			+bold
+			font-size: 15px 
+			display: block
+			margin-bottom: 5px  
+			color: #3b3b3b 
+		.smi__favicon
+			display: inline-block
+			vertical-align: middle
+			margin-right: 8px 
+		.smi__url
+			color: #27A9DE
+			text-decoration: underline
+			display: inline-block 
