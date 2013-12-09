@@ -538,8 +538,9 @@ a img, fieldset { border: none; }
 
 .documents__list { margin-bottom: 30px; list-style-type: none; text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; }
 .documents__list:after { content: ""; width: 100%; height: 0px; visibility: hidden; overflow: hidden; display: inline-block; }
+.documents__list li { display: inline-block; width: 225px; }
 
-.document { display: inline-block; text-align: left; line-height: normal; width: 225px; vertical-align: top; }
+.document { text-align: left; line-height: normal; vertical-align: top; }
 .document a { position: relative; display: block; margin-bottom: 30px; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 60px; text-decoration: none; font-size: 13px; }
 
 .document_pdf a:before { content: ""; position: absolute; top: 0; left: 0; background: url('../img/icons-sf36e0f5ece.png') 0 -437px no-repeat; width: 45px; height: 48px; }
