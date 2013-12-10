@@ -168,7 +168,7 @@
 			input
 				display: none
 			i
-				+s(check)
+				+s(check0)
 				vertical-align: middle
 				display: inline-block
 				margin-right: 6px 
@@ -284,6 +284,19 @@
 		margin-right: 20px 
 		height: 144px 
 		position: relative
+		&:hover
+			img
+				opacity: .5 
+		&:active
+			&:before
+				content: ' '
+				position: absolute
+				left: 0
+				top: 0
+				bottom: 0
+				right: 0
+				border-radius: 6px 
+				box-shadow: inset 0 0 5px rgba(#000, .4)
 		img
 			display: block
 	.promos__title
