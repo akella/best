@@ -148,6 +148,9 @@
 			display: inline-block
 			vertical-align: middle
 			margin-right: 5px 
+	&.is-active
+		.callus__back
+			text-decoration: none
 		span
 			text-decoration: underline
 			font-size: 13px 
@@ -159,4 +162,40 @@
 		line-height: 1
 		text-indent: -.5em 
 		padding: 5px 0 2px 0  
+.callus__drop
+	position: absolute
+	top: -5px
+	width: 265px - 40px 
+	left: -281px 
+	background-color: #879193
+	+box-shadow(0 4px 6px rgba(0,0,0,.25))
+	border-radius: 6px
+	padding: 20px 
+	display: none
+	.is-active &
+		display: block
+	.callus__droparr
+		position: absolute
+		top: 10px 
+		right: -6px 
+		+s(droparr)
+	.callus__dropinput 
+		display: inline-block
+		input
+			font-size: 13px 
+			color: #7A8087
+			width: 150px  
+			padding: 0 10px
+			height: 30px   
+			line-height: 30px
+			background: #fff  
+			border: none 
+	.callus__dropsubmit
+		display: inline-block
+		@extend %button
+		margin-left: 10px 
+		i
+			+s(check)
+			display: inline-block
+
 	

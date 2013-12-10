@@ -103,6 +103,25 @@ $(document).ready(function() {
       $.scrollTo( target, 800 ,{ offset:-90 });
       return false;
     });
+    var $cdr = $(".callus__drop");
+    $('.callus').click(function(event) {
+      $(this).addClass('is-active');
+    });
+    /* Hide the popup whereas clicking outside */
+    $(document).on("click", function() {
+      //$cdr.hide();
+      $('.callus').removeClass('is-active');
+    });
+     //Don't hide the popup whereas clicking inside 
+    $cdr.on("click", function(evt) {
+        evt.stopPropagation();
+    });
+     $('.callus').on("click", function(evt) {
+        evt.stopPropagation();
+    });
+
+
+   
 
 
 
