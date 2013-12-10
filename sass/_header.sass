@@ -45,7 +45,7 @@
 		width: 160px 
 .mainslider
 	height: 325px 
-	background: url(../img/sot1.png) no-repeat 50% 0 
+	//background: url(../img/sot1.png) no-repeat 50% 0
 	position: absolute
 	top: 152px 
 	left: 0px 
@@ -63,7 +63,7 @@
 			height: 303px 
 		.mainslider__text
 			position: absolute
-			left: 606px 
+			left: 626px 
 			top: 40px 
 			width: 356px 
 			h2
@@ -71,7 +71,11 @@
 				+bold
 				color: #3B3B3B
 				text-transform: uppercase
-				line-height: 1.1  
+				line-height: 1
+				min-height: 1.6em 
+				span
+					font-size: 30px 
+					display: block
 		.mainslider__sub
 			font-weight: normal
 			margin-top: 4px 
@@ -94,7 +98,7 @@
 		position: absolute
 		top: 104px 
 		+s(next)
-		left: 511px + 10px
+		left: 511px + 24px
 		z-index: 200
 		cursor: pointer
 	.mainslider__next
@@ -104,7 +108,7 @@
 			+s(nextactive)
 	.mainslider__prev
 		+s(prev)
-		left: 70px + 10px
+		left: 70px + 24px
 		&:hover
 			+s(prevhover)
 		&:active
