@@ -51,6 +51,7 @@ a img, fieldset { border: none; }
 .mainslider .mainslider__slide .mainslider__sub strong { font-weight: normal; color: #3da0d5; text-transform: uppercase; }
 .mainslider .mainslider__slide .mainslider__info { color: #3b3b3b; font-size: 13px; margin-bottom: 12px; margin-top: 7px; }
 .mainslider .mainslider__slide .mainslider__link { font-size: 13px; color: #3b3b3b; }
+.mainslider .mainslider__slidelong .mainslider__text { top: 20px; }
 .mainslider .mainslider__next, .mainslider .mainslider__prev { position: absolute; top: 104px; background: url('../img/icons-s392f359099.png') 0 -2548px no-repeat; width: 72px; height: 79px; left: 535px; z-index: 200; cursor: pointer; }
 .mainslider .mainslider__next:hover { background: url('../img/icons-s392f359099.png') 0 -2197px no-repeat; width: 70px; height: 78px; }
 .mainslider .mainslider__next:active { background: url('../img/icons-s392f359099.png') 0 -708px no-repeat; width: 70px; height: 78px; }
