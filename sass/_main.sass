@@ -368,17 +368,18 @@
 			color: #27A9DE 
 			margin-top: 12px 
 			+semi
+
 .filters
 	border: 1px solid #dbdbdb
 	+border-radius(3px)
 	background-color: #fff
 	padding: 8px 0 
 	margin-bottom: 18px 
+	z-index: 80 
 	+clr
 	+box-shadow(0 2px 3px rgba(0,0,0,.11))
 	+background-image(linear-gradient(bottom, rgba(0,0,0,.06) 0%, rgba(0,0,0,0) 100%))
 	&.filters_alt
-		margin-top: 30px 
 		a
 			white-space:nowrap
 		.filters__1
@@ -416,6 +417,9 @@
 		width: 230px 
 	.filters__5
 		width: 168px 
+.is-fixed
+	min-height: 50px 
+	z-index: 98 
 .items
 	margin: 0 -24px
 	.item

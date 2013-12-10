@@ -14,8 +14,8 @@
 	<script src="js/sticky.js"></script>
 	<script src="js/jquery.jscrollpane.min.js"></script>
 	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/scrollto.js"></script>
 	<script src="js/fancybox/jquery.fancybox.js"></script>
-
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -58,20 +58,22 @@
 
 
 	<!-- begin filters  -->
-	<div class="filters filters_alt">
-		<ul>
-			<li class="filters__1"><a href="#">Комания БЕСТ-Новострой</a></li>
-			<li class="filters__2"><a href="#">Вакансии</a></li>
-			<li class="filters__3"><a href="#">Наши партнеры </a></li>
-			<li class="filters__4"><a href="#">Наша миссия</a></li>
-			<li class="filters__5"><a  class="is-active" href="#">Наши награды</a></li>
+	<div class="is-fixed">
+	<div class="filters filters_alt ">
+		<ul id="aboutnav">
+			<li class="filters__1"><a class="is-active" href="#s1">Комания БЕСТ-Новострой</a></li>
+			<li class="filters__2"><a href="#s2">Вакансии</a></li>
+			<li class="filters__3"><a href="#s3">Наши партнеры </a></li>
+			<li class="filters__4"><a href="#s4">Наша миссия</a></li>
+			<li class="filters__5"><a  href="#s5">Наши награды</a></li>
 		</ul>
 	</div>
 	<!-- end filters -->
+	</div>
 
 
 	<!-- begin b  -->
-	<div class="b">
+	<div class="b" id="s1">
 		<h3 class="h3"><span>Компания БЕСТ-Новострой</span></h3>
 		<div class="b__content">
 			<p>На рынке жилой недвижимости Москвы и Подмосковья компания успешно реализует такие амбициозные проекты, как: ЖК «Славянка-Сколково», ЖК «Одинцовский Парк», микрорайон «Спасский Мост», ЖК «Раменское-Парк», ЖК «Аристово-Митино», ЖК «Октябрь» и др.
@@ -125,7 +127,7 @@
 	<!-- end timeline -->
 
 	<!-- begin b  -->
-	<div class="b b_vacancy">
+	<div class="b b_vacancy" id="s2">
 		<h3 class="h3"><span>Вакансии</span></h3>
 		<div class="cols">
 			<!-- begin col  -->
@@ -169,7 +171,7 @@
 	<!-- end b -->
 
 	<!-- begin b  -->
-	<div class="b b_logos">
+	<div class="b b_logos" id="s3">
 		<h3 class="h3"><span>Наши партнеры</span></h3>
 		<div class="logos">
 		<a href="#"><img src="img/l1.jpg" alt=""></a>
@@ -200,7 +202,7 @@
 	<!-- end b -->
 
 	<!-- begin b  -->
-	<div class="b">
+	<div class="b" id="s4">
 		<h3 class="h3"><span>Наша миссия</span></h3>
 		<div class="b__multicols">
 			<p>Миссия компании «БЕСТ-Новострой» заключается в содействии развитию цивилизованного рынка недвижимости в России. В своей деятельности на всех этапах работы c клиентами мы выступаем профессиональным посредником и обеспечиваем баланс интересов всех сторон. Доверие клиентов — наша главная ценность! Только честность делает наши взаимоотношения прочными, а результат работы — безупречным. Только ответственность меняет наш бизнес к лучшему, и позволяет нам быть лучшими в том, чем мы занимаемся. Мы убеждены — порядочными быть выгодно!</p>
@@ -214,7 +216,7 @@
 	
 
 	<!-- begin b  -->
-	<div class="b">
+	<div class="b" id="s5">
 		<h3 class="h3"><span>Наши награды</span></h3>
 		<div class="awards">
 			<!-- begin award  -->
@@ -258,7 +260,7 @@
 	<!-- end b -->
 
 	<!-- begin b  -->
-	<div class="b">
+	<div class="b" id="s6">
 		<h3 class="h3"><span>СМИ о нас</span></h3>
 
 		<!-- begin onas  -->

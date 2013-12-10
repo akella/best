@@ -95,6 +95,14 @@ $(document).ready(function() {
       return false;
     });
 
+    $('#aboutnav a').click(function(event) {
+      idd = $(this).attr('href');
+      target = $(''+idd);
+      $('#aboutnav a').removeClass('is-active');
+      $(this).addClass('is-active');
+      $.scrollTo( target, 800 ,{ offset:-90 });
+      return false;
+    });
 
 
 
@@ -122,7 +130,8 @@ $(document).ready(function() {
         // If set to null then the window object will be used.
         parentSelector: null
     };
-    $(".tabs-menu").stickyPanel(stickyPanelSettings);
+    $(".tabs-menu, .is-fixed").stickyPanel(stickyPanelSettings);
+
 
     $(".fancybox").fancybox({
       overlayShow: true,
