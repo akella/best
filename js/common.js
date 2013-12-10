@@ -75,6 +75,7 @@ $(document).ready(function() {
     $(".js-preview-picture").click(function(){
       var path = $(this).attr('href');
       $(".js-picture").html('<img src=' + path + ' alt=""/>');
+      $(".about-gallery__nav li").removeClass('is-active');
       $(".gallery-preview li").removeClass('is-active');
       $(this).parent().addClass('is-active');
       return false;
