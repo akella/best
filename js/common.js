@@ -70,15 +70,15 @@ $(document).ready(function() {
     }
 	
 
-    // about-gallery
+    // galleries
     
     $(".js-preview-picture").click(function(){
       var path = $(this).attr('href');
       $(".js-picture").html('<img src=' + path + ' alt=""/>');
+      $(".gallery-preview li").removeClass('is-active');
+      $(this).parent().addClass('is-active');
       return false;
     });
-
-    //gallery
     
     if($(".scroll-pane").length > 0){
       $('.scroll-pane').jScrollPane({
