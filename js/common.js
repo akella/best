@@ -4,18 +4,25 @@ $(document).ready(function() {
     $('.search__advanced').toggle();
     //$('.search').toggleClass('search_advanced');
     $('.search__more').slideDown();
-    $('.search, #ubermap').animate({ height: '417px' }, 300);
+    $('.search, #ubermap1').animate({ height: '417px' }, 300,function(){
+
+      map.invalidateSize();
+    });
     return false;
   });
 
   $('.js-hide').click(function(event) {
     $('.search__advanced').toggle();
     $('.search__more').slideUp();
-    $('.search,#ubermap').animate({ height: '234px' }, 300);
+    $('.search,#ubermap1').animate({ height: '234px' }, 300);
     $('.search').toggleClass('search_advanced');
     return false;
   });
 
+  $('.js-togglemap').click(function(event) {
+    $('.search__mapimg').animate({ height: '800px' }, 300);
+    return false;
+  });
 
 	$('.room label').click(function(event) {
 		$(this).toggleClass('is-active');
@@ -170,8 +177,9 @@ $(document).ready(function() {
     };
     $(".is-fixed2, .is-fixed").stickyPanel(stickyPanelSettings);
 
-
-    $(".fancybox").fancybox({
-      overlayShow: true,
-    });
+    if($("#slider-range3").length > 0){
+      $(".fancybox").fancybox({
+        overlayShow: true,
+      });
+    }
 });

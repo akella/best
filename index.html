@@ -6,12 +6,18 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v1.5.0/mapbox.js'></script>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.5.0/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+
 	<script src="js/jquery.js"></script>
 	<script src="js/ui.js"></script>
 	<script src="js/cycle.js"></script>
 	<script src="js/sticky.js"></script>
 	<script src="js/jquery.jscrollpane.min.js"></script>
 	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/scrollto.js"></script>
+	<script src="js/fancybox/jquery.fancybox.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -276,7 +282,7 @@
 							<div class="search__rangelabel2">
 								до
 							</div>
-							<div class="search__rangevalue2" id="search__pricevalue1">10000000</div>
+							<div class="search__rangevalue2" id="search__pricevalue2">10000000</div>
 							<div class="search__rangecurrency">руб.</div>
 						</div>
 						<div class="search__rangerange">
@@ -317,7 +323,7 @@
 								<div class="search__rangelabel2">
 									до
 								</div>
-								<div class="search__rangevalue2" id="search__range2value1">80</div>
+								<div class="search__rangevalue2" id="search__range2value2">80</div>
 								<div class="search__rangecurrency">м<sup>2</sup></div>
 							</div>
 							<div class="search__rangerange">
@@ -336,7 +342,7 @@
 								<div class="search__rangelabel2">
 									до
 								</div>
-								<div class="search__rangevalue2" id="search__range3value1">80</div>
+								<div class="search__rangevalue2" id="search__range3value2">80</div>
 								<div class="search__rangecurrency">м<sup>2</sup></div>
 							</div>
 							<div class="search__rangerange">
@@ -354,14 +360,21 @@
 			</div>
 		</div>
 		<!-- end search__form -->
+		
 		<!-- begin search__map  -->
-		<a href="#" class="search__map">
+		<div class="search__map">
 			<h3>Карта объектов</h3>
-			<div class="search__mapimg">
-				<iframe id="ubermap" width='264px' height='234px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/akella.ggmfmfld/mm/zoompan,zoomwheel.html?secure=1#10/55.7267/37.6254'></iframe>
+			<div class="search__mapimg" id="ubermap">
+
+				<!-- <iframe id="ubermap" width='264px' height='234px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/akella.ggmfmfld/mm/zoompan,zoomwheel.html?secure=1#10/55.7267/37.6254'></iframe> -->
 			</div>
-			<div class="search__maplink">смотреть на карте</div>
-		</a>
+			<script>
+			  // Visit https://www.mapbox.com/mapbox.js/overview/ for documentation and examples
+			var map = L.mapbox.map('ubermap', 'akella.ggmfmfld')
+				.setView([55.7267, 37.6247], 10);
+			</script>
+			<div class="search__maplink js-togglemap">смотреть на карте</div>
+		</div>
 		<!-- end search__map -->
 	</div>
 	<!-- end search -->

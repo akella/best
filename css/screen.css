@@ -175,12 +175,14 @@ a img, fieldset { border: none; }
 .search__form .search__pricerange, .search__form .search__rangerange { background: #737d81; width: 292px; }
 
 .search__map { float: right; width: 264px; position: absolute; right: 0; top: 0; bottom: 0; border-radius: 0 10px 10px 0; }
-.search__map .search__mapimg { border-radius: 0 10px 10px 0; overflow: hidden; height: 234px; width: 264px; }
+.search__map .search__mapimg { border-radius: 0 10px 10px 0; height: 234px; width: 264px; }
 .search__map .search__mapimg iframe { border-radius: 0 10px 10px 0; }
 .search_advanced .search__map .search__mapimg { height: auto; bottom: 0; }
 .search_advanced .search__map .search__mapimg iframe { height: 100% !important; bottom: 0; position: absolute; left: 0; right: 0; bottom: 0; top: 0; }
 .search__map h3 { font-size: 15px; font-weight: normal; text-transform: uppercase; color: #3b3b3b; left: 0px; top: -45px; position: absolute; }
-.search__map .search__maplink { position: absolute; bottom: 10px; right: 10px; background: #313b47; border-radius: 2px; text-transform: uppercase; font-size: 10px; font-family: "pbold", arial, sans-serif; color: white; text-decoration: none; padding: 0px 14px; height: 26px; line-height: 26px; }
+.search__map .search__maplink { position: absolute; bottom: 10px; right: 10px; background: #313b47; border-radius: 2px; text-transform: uppercase; font-size: 10px; font-family: "pbold", arial, sans-serif; color: white; text-decoration: none; padding: 0px 14px; height: 26px; line-height: 26px; cursor: pointer; }
+
+#ubermap { position: absolute !important; top: 0; right: 0; min-height: 234px; }
 
 .promos { margin-right: -20px; margin: 30px -20px 50px 0; *zoom: 1; }
 .promos:before, .promos:after { content: " "; display: table; }
