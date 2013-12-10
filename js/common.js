@@ -1,4 +1,22 @@
 $(document).ready(function() {
+
+  $('.js-show').click(function(event) {
+    $('.search__advanced').toggle();
+    //$('.search').toggleClass('search_advanced');
+    $('.search__more').slideDown();
+    $('.search, #ubermap').animate({ height: '417px' }, 300);
+    return false;
+  });
+
+  $('.js-hide').click(function(event) {
+    $('.search__advanced').toggle();
+    $('.search__more').slideUp();
+    $('.search,#ubermap').animate({ height: '234px' }, 300);
+    $('.search').toggleClass('search_advanced');
+    return false;
+  });
+
+
 	$('.room label').click(function(event) {
 		$(this).toggleClass('is-active');
 	});

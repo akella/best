@@ -285,7 +285,70 @@
 					</div>
 					<!-- end search__col2 -->
 					<div class="clr"></div>
-					<a href='#' class="search__advanced">Расширенный поиск</a>
+					
+					<!-- begin search__more  -->
+					<div class="search__more" hidden>
+						<div class="search__col1">
+							<div class="search__range">
+								<label for="">Этаж</label>
+								<div class="search__rangelabel1">
+									от
+								</div>
+								<div class="search__rangevalue1" id="search__rangevalue1">1</div>
+								<div class="search__rangelabel2">
+									до
+								</div>
+								<div class="search__rangevalue2" id="search__rangevalue2">15</div>
+								
+							</div>
+							<div class="search__rangerange">
+								<div id="slider-range1"></div>
+							</div>
+						</div>
+						<!-- end col -->
+						<!-- begin search__col2  -->
+						<div class="search__col2">
+							<div class="search__range">
+								<label for="">Цена м<sup>2</sup></label>
+								<div class="search__rangelabel1">
+									от
+								</div>
+								<div class="search__rangevalue1" id="search__range2value1">10</div>
+								<div class="search__rangelabel2">
+									до
+								</div>
+								<div class="search__rangevalue2" id="search__range2value1">80</div>
+								<div class="search__rangecurrency">м<sup>2</sup></div>
+							</div>
+							<div class="search__rangerange">
+								<div id="slider-range2"></div>
+							</div>
+						</div>
+						<!-- end search__col2 -->
+						<div class="clr"></div>
+						<div class="search__col1">
+							<div class="search__range">
+								<label for="">Площадь</label>
+								<div class="search__rangelabel1">
+									от
+								</div>
+								<div class="search__rangevalue1" id="search__range3value1">10</div>
+								<div class="search__rangelabel2">
+									до
+								</div>
+								<div class="search__rangevalue2" id="search__range3value1">80</div>
+								<div class="search__rangecurrency">м<sup>2</sup></div>
+							</div>
+							<div class="search__rangerange">
+								<div id="slider-range3"></div>
+							</div>
+						</div>
+						<!-- end col -->
+						<div class="clr"></div>
+					</div>
+					<!-- end search__more -->
+					<a href='#' class="search__advanced js-show">Расширенный поиск</a>
+					<a href="#" class="search__advanced js-hide" hidden>Свернуть расширенный поиск</a>
 					<div class="search__button">Найти<input type="submit"></div>
 				</form>
 			</div>
@@ -295,7 +358,7 @@
 		<a href="#" class="search__map">
 			<h3>Карта объектов</h3>
 			<div class="search__mapimg">
-				<iframe width='264px' height='234px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/akella.gfjehkfj/mm/zoompan,zoomwheel.html?secure=1#8/50.078/30.723'></iframe>
+				<iframe id="ubermap" width='264px' height='234px' frameBorder='0' src='https://a.tiles.mapbox.com/v3/akella.ggmfmfld/mm/zoompan,zoomwheel.html?secure=1#10/55.7267/37.6254'></iframe>
 			</div>
 			<div class="search__maplink">смотреть на карте</div>
 		</a>
