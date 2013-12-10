@@ -303,6 +303,10 @@ a img, fieldset { border: none; }
 .object { float: left; width: 730px; overflow: hidden; }
 .object.object_wide { width: auto; float: none; width: 100%; }
 
+.object__wrap { *zoom: 1; }
+.object__wrap:before, .object__wrap:after { content: " "; display: table; }
+.object__wrap:after { clear: both; }
+
 .tabs-menu { float: right; width: 210px; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; border: 1px solid #d2d2d2; }
 .tabs-menu ul { list-style-type: none; }
 
@@ -621,7 +625,9 @@ a img, fieldset { border: none; }
 
 .plans-tabs__content { text-align: center; }
 
-.gallery-preview { padding-top: 42px; margin-bottom: 10px; -webkit-box-shadow: 0px 7px 6px -6px #cccccc; -moz-box-shadow: 0px 7px 6px -6px #cccccc; box-shadow: 0px 7px 6px -6px #cccccc; }
+.housing__gallery { margin-bottom: 20px; }
+
+.gallery-preview { padding-top: 42px; margin-bottom: 10px; -webkit-box-shadow: 0px 18px 20px -20px #cccccc; -moz-box-shadow: 0px 18px 20px -20px #cccccc; box-shadow: 0px 18px 20px -20px #cccccc; }
 .gallery-preview ul { *zoom: 1; white-space: nowrap; }
 .gallery-preview ul:before, .gallery-preview ul:after { content: " "; display: table; }
 .gallery-preview ul:after { clear: both; }
