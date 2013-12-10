@@ -1,10 +1,10 @@
 $(document).ready(function() {
-
+//067 93 40
   $('.js-show').click(function(event) {
     $('.search__advanced').toggle();
     //$('.search').toggleClass('search_advanced');
     $('.search__more').slideDown();
-    $('.search, #ubermap1').animate({ height: '417px' }, 300,function(){
+    $('.search, #ubermap').animate({ height: '417px' }, 300,function(){
 
       map.invalidateSize();
     });
@@ -14,13 +14,20 @@ $(document).ready(function() {
   $('.js-hide').click(function(event) {
     $('.search__advanced').toggle();
     $('.search__more').slideUp();
-    $('.search,#ubermap1').animate({ height: '234px' }, 300);
+    $('.search,#ubermap').animate({ height: '234px' }, 300);
     $('.search').toggleClass('search_advanced');
     return false;
   });
 
   $('.js-togglemap').click(function(event) {
-    $('.search__mapimg').animate({ height: '800px' }, 300);
+    $('.search__mapimg').animate({ width: '1000px' }, 300);
+    if($('.search__mapimg').width()>500){
+      $('.search__mapimg').animate({ width: '268px' }, 300);
+    }
+    else{
+      $('.search__mapimg').animate({ width: '1000px' }, 300);
+    }
+    $(this).children('span').toggle();
     return false;
   });
 

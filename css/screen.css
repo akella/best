@@ -174,7 +174,7 @@ a img, fieldset { border: none; }
 .search__form .search__range .search__rangecurrency { position: absolute; right: -41px; top: 6px; color: white; font-size: 12px; width: 3em; text-align: left; }
 .search__form .search__pricerange, .search__form .search__rangerange { background: #737d81; width: 292px; }
 
-.search__map { float: right; width: 264px; position: absolute; right: 0; top: 0; bottom: 0; border-radius: 0 10px 10px 0; }
+.search__map { float: right; width: 264px; position: absolute; right: 0; top: 0; bottom: 0; border-radius: 0 10px 10px 0; z-index: 200; }
 .search__map .search__mapimg { border-radius: 0 10px 10px 0; height: 234px; width: 264px; }
 .search__map .search__mapimg iframe { border-radius: 0 10px 10px 0; }
 .search_advanced .search__map .search__mapimg { height: auto; bottom: 0; }
