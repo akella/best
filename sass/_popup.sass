@@ -1,0 +1,44 @@
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: #000 
+	background: rgba(#000, .37)
+	z-index: 99 
+.superpopup
+	position: fixed
+	left: 50%
+	top: 50%
+	width: 827px   
+	height: 564px 
+	margin-left: -(827px/2) 
+	margin-top: -(564px/2) 
+	background-color: #fff
+	+box-shadow(0 0 15px rgba(0,0,0,.5))
+	border-radius: 6px
+	z-index: 100 
+	.superpopup__content
+		padding: 20px  0 20px 28px
+		overflow: hidden
+		position: relative
+	.superpopup__title
+		font-weight: normal
+		font-size: 30px 
+		color: #3B3B3B
+		+bold
+		margin-bottom: 24px  
+	.superpopup__close
+		top: 29px 
+		right: -56px 
+		position: absolute
+		+s(popupclose)
+		cursor: pointer
+	.superpopup__nav
+		text-align: right
+		width: 100px 
+		float: left
+	.superpopup__img
+		float: right
+	

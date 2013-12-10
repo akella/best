@@ -86,6 +86,15 @@ $(document).ready(function() {
       });
     }
 
+    $('.superpopup__close,.overlay').click(function(event) {
+      $('.superpopup, .overlay').hide();
+    });
+    $('.superpopup__nav a').click(function(event) {
+      $('.superpopup__nav a').removeClass('is-active');
+      $(this).addClass('is-active');
+      return false;
+    });
+
 
 
 
