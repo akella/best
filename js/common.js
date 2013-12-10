@@ -124,5 +124,7 @@ $(document).ready(function() {
     };
     $(".tabs-menu").stickyPanel(stickyPanelSettings);
 
-
+    $(".fancybox").fancybox({
+      overlayShow: true,
+    });
 });
