@@ -149,7 +149,7 @@ $(document).ready(function() {
         // If set to null then the window object will be used.
         parentSelector: null
     };
-    $(".tabs-menu, .is-fixed").stickyPanel(stickyPanelSettings);
+    $(".is-fixed2, .is-fixed").stickyPanel(stickyPanelSettings);
 
 
     $(".fancybox").fancybox({
