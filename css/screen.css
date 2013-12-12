@@ -149,8 +149,10 @@ a img, fieldset { border: none; }
 .search__groups.is-opened h4 i { background: url('../img/icons-s96fbbc33dd.png') 0 -3095px no-repeat; width: 7px; height: 4px; }
 .search__groups.is-opened .search__groupscontent { display: block; }
 .search__groups .search__group { opacity: 0.5; display: block; text-align: right; color: black; text-decoration: none; padding: 6px 9px 6px 4px; }
-.search__groups .search__group i { display: inline-block; background: url('../img/icons-s96fbbc33dd.png') 0 -2997px no-repeat; width: 14px; height: 12px; margin-left: 10px; }
+.search__groups .search__group i { display: inline-block; background: url('../img/icons-s96fbbc33dd.png') 0 -2997px no-repeat; width: 14px; height: 12px; margin-left: 10px; opacity: 0; }
+.search__groups .search__group:hover i { opacity: 1; }
 .search__groups .search__group.is-active { opacity: 1; }
+.search__groups .search__group.is-active i { opacity: 1; }
 .search__groups .search__groupscontent { background: white; width: 226px; border: 1px solid #bbbbbb; display: none; position: absolute; right: 0; top: 25px; z-index: 10; padding: 4px 0; }
 
 .search__form { position: relative; }

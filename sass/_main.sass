@@ -96,13 +96,19 @@
 		color: #000
 		text-decoration: none
 		padding: 6px 9px 6px 4px
-		
 		i
 			display: inline-block
 			+s(gal)
 			margin-left: 10px 
+			opacity: 0 
+		&:hover 
+			i
+				opacity: 1 
 		&.is-active
 			opacity: 1 
+			i
+				opacity: 1 
+				
 	.search__groupscontent
 		background: #fff
 		width: 226px  
