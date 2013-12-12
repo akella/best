@@ -138,6 +138,10 @@ a img, fieldset { border: none; }
 .search { margin-top: 82px; margin-bottom: 73px; position: relative; background-color: #879193; -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); border-radius: 10px; height: 234px; }
 .search.search_advanced { height: 417px; }
 
+.search__pre { position: relative; height: 1px; margin-bottom: -36px; margin-top: 36px; }
+.search__pre h3 { font-size: 15px; font-weight: normal; text-transform: uppercase; color: #3b3b3b; left: 20px; top: 0; position: absolute; }
+.search__pre h3 + h3 { left: 735px; }
+
 .search__form { position: relative; }
 .search__form h3 { font-size: 15px; font-weight: normal; text-transform: uppercase; color: #3b3b3b; left: 20px; top: -45px; position: absolute; }
 .search_advanced .search__form h3 { left: 0; }
