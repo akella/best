@@ -1,8 +1,20 @@
 $(document).ready(function() {
 
+// Создаем собственную метку
+var s = new YMaps.Style(); // Создаем стиль 
+s.iconStyle = new YMaps.IconStyle(); // Создает стиль значка метки
+s.iconStyle.href = "img/metka.png"; // Указываем путь к картинке
+s.iconStyle.size = new YMaps.Point(23, 34); // Размеры картинки
+s.iconStyle.offset = new YMaps.Point(-10, -19); // Сдвиг
+// var ownPlacemark = new YMaps.Placemark(coords, { 
+//     style: s // Указываем какой стиль применить
+// });
+//map.addOverlay(ownPlacemark);
+
+
  var map = new YMaps.Map(document.getElementById("YMapsID"));
   map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 9);
-      map.addControl(new YMaps.ToolBar());
+      //map.addControl(new YMaps.ToolBar());
       // map.addControl(new YMaps.Zoom());
       // map.addControl(new YMaps.ScaleLine());
       // map.addControl(new YMaps.TypeControl([
@@ -15,7 +27,7 @@ $(document).ready(function() {
   var geocoder = new YMaps.Geocoder("Россия, Москва, ул. Тверская, д. 43"); 
   YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
       var geoCoords = geocoder.get(0).getGeoPoint(),
-      geoPlacemark = new YMaps.Placemark(geoCoords);
+      geoPlacemark = new YMaps.Placemark(geoCoords,{style: s});
       // console.log(geoCoords);
       geoPlacemark.name = "Имя метки1"; // Заголовок балуна
       geoPlacemark.description = "Описание метки"; // Текст балуна
@@ -25,7 +37,7 @@ $(document).ready(function() {
   var geocoder = new YMaps.Geocoder("Россия, Москва, Казанский переулок, д. 16"); 
   YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
       var geoCoords = geocoder.get(0).getGeoPoint(),
-      geoPlacemark = new YMaps.Placemark(geoCoords);
+      geoPlacemark = new YMaps.Placemark(geoCoords,{style: s});
       // console.log(geoCoords);
       geoPlacemark.name = "Имя метки2"; // Заголовок балуна
       geoPlacemark.description = "Описание метки"; // Текст балуна
