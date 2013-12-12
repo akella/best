@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+if($(".search__groups").length > 0){
+
 // Создаем собственную метку
 var s = new YMaps.Style(); // Создаем стиль 
 s.iconStyle = new YMaps.IconStyle(); // Создает стиль значка метки
@@ -98,7 +100,9 @@ $('.search__group').click(function(event) {
     $(this).parent().toggleClass('is-opened');
     return false;
   });
-  
+
+
+
   $('.js-show').click(function(event) {
     $('.search__advanced').toggle();
     //$('.search').toggleClass('search_advanced');
@@ -156,6 +160,10 @@ control2 = new YMaps.ScaleLine();
     $(this).children('span').toggle();
     return false;
   });
+
+}
+// end map js
+// ==================================
 
 	$('.room label').click(function(event) {
 		$(this).toggleClass('is-active');
