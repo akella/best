@@ -44,6 +44,7 @@
 	height: 1px  
 	margin-bottom: -36px 
 	margin-top: 36px 
+	z-index: 300 
 	h3
 		font-size: 15px 
 		font-weight: normal
@@ -54,7 +55,64 @@
 		position: absolute
 	h3+h3
 		left: 735px 
-
+.search__groups
+	position: absolute
+	right: 10px 
+	top: 54px 
+	
+	z-index: 200  
+	h4
+		background: #fff
+		border-radius: 3px
+		width: 84px  
+		text-align: left
+		padding: 0 0 0 10px 
+		height: 25px 
+		line-height: 25px 
+		cursor: pointer
+		position: relative
+		border: 1px solid #BBB 
+		border-radius: 3px
+		i
+			display: inline-block
+			position: absolute
+			+s(arrowbot)
+			right: 8px 
+			top: 11px 
+	&.is-opened
+		h4
+			z-index: 23 
+			border-bottom: none 
+			border-radius: 3px 3px 0 0
+			i
+				+s(arrowtop)
+		.search__groupscontent
+			display: block
+		
+	.search__group
+		opacity: .5
+		display: block
+		text-align: right
+		color: #000
+		text-decoration: none
+		padding: 6px 9px 6px 4px
+		
+		i
+			display: inline-block
+			+s(gal)
+			margin-left: 10px 
+		&.is-active
+			opacity: 1 
+	.search__groupscontent
+		background: #fff
+		width: 226px  
+		border: 1px solid #BBB 
+		display: none
+		position: absolute
+		right: 0
+		top: 25px  
+		z-index:  10
+		padding: 4px 0 
 .search__form
 	position: relative
 	h3

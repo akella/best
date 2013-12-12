@@ -1,42 +1,49 @@
 $(document).ready(function() {
 
  var map = new YMaps.Map(document.getElementById("YMapsID"));
-                    map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 9);
-                        map.addControl(new YMaps.ToolBar());
-                        map.addControl(new YMaps.Zoom());
-                        map.addControl(new YMaps.ScaleLine());
-                        map.addControl(new YMaps.TypeControl([
-                            YMaps.MapType.MAP,
-                            YMaps.MapType.SATELLITE,
-                            YMaps.MapType.HYBRID
-                        ], [0, 1, 2]));
+  map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 9);
+      map.addControl(new YMaps.ToolBar());
+      // map.addControl(new YMaps.Zoom());
+      // map.addControl(new YMaps.ScaleLine());
+      // map.addControl(new YMaps.TypeControl([
+      //     YMaps.MapType.MAP,
+      //     YMaps.MapType.SATELLITE,
+      //     YMaps.MapType.HYBRID
+      // ], [0, 1, 2]));
 
-                    //adding mark example
-                    var geocoder = new YMaps.Geocoder("Россия, Москва, ул. Тверская, д. 43"); 
-                    YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
-                        var geoCoords = geocoder.get(0).getGeoPoint(),
-                        geoPlacemark = new YMaps.Placemark(geoCoords);
-                        // console.log(geoCoords);
-                        geoPlacemark.name = "Имя метки1"; // Заголовок балуна
-                        geoPlacemark.description = "Описание метки"; // Текст балуна
-                        map.addOverlay(geoPlacemark); 
-                    });
+  //adding mark example
+  var geocoder = new YMaps.Geocoder("Россия, Москва, ул. Тверская, д. 43"); 
+  YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
+      var geoCoords = geocoder.get(0).getGeoPoint(),
+      geoPlacemark = new YMaps.Placemark(geoCoords);
+      // console.log(geoCoords);
+      geoPlacemark.name = "Имя метки1"; // Заголовок балуна
+      geoPlacemark.description = "Описание метки"; // Текст балуна
+      map.addOverlay(geoPlacemark); 
+  });
 
-                    var geocoder = new YMaps.Geocoder("Россия, Москва, Казанский переулок, д. 16"); 
-                    YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
-                        var geoCoords = geocoder.get(0).getGeoPoint(),
-                        geoPlacemark = new YMaps.Placemark(geoCoords);
-                        // console.log(geoCoords);
-                        geoPlacemark.name = "Имя метки2"; // Заголовок балуна
-                        geoPlacemark.description = "Описание метки"; // Текст балуна
-                        map.addOverlay(geoPlacemark); 
-                    });
-
-
+  var geocoder = new YMaps.Geocoder("Россия, Москва, Казанский переулок, д. 16"); 
+  YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
+      var geoCoords = geocoder.get(0).getGeoPoint(),
+      geoPlacemark = new YMaps.Placemark(geoCoords);
+      // console.log(geoCoords);
+      geoPlacemark.name = "Имя метки2"; // Заголовок балуна
+      geoPlacemark.description = "Описание метки"; // Текст балуна
+      map.addOverlay(geoPlacemark); 
+  });
 
 
 
 
+
+  $('.search__groups h4').click(function(event) {
+    $(this).parent().toggleClass('is-opened');
+    return false;
+  });
+  $('.search__group').click(function(event) {
+    $(this).toggleClass('is-active');
+    return false;
+  });
   $('.js-show').click(function(event) {
     $('.search__advanced').toggle();
     //$('.search').toggleClass('search_advanced');
@@ -56,6 +63,9 @@ $(document).ready(function() {
     $('.search').removeClass('search_advanced');
     return false;
   });
+control1 = new YMaps.Zoom();
+control2 = new YMaps.ScaleLine();
+
 
   $('.js-togglemap').click(function(event) {
     //map.redraw() 
@@ -73,10 +83,18 @@ $(document).ready(function() {
         });
         $('.search').animate({ height: '234px' }, 300);
       }
+
       
+      map.removeControl(control1);
+      //map.removeControl(control2);
+      // map.removeControl(control3);
+      // map.redraw();
     }
     else{
       $('.search__mapimg, .search').animate({ width: '1000px',height: '417px' }, 300,function(){
+        map.addControl(control1);
+        //map.addControl(control2);
+        //map.addControl(control3);
         map.redraw();
       });
     }
