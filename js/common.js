@@ -20,7 +20,7 @@ var bounds = map.getBounds(),
 
 // first group
 var gCollection1 = new YMaps.GeoObjectCollection();
-for (var i = 0; i < 1; i++) {
+for (var i = 0; i < 4; i++) {
     var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
                                    pointLb.getLat() + span.y * Math.random());
     var placemark = new YMaps.Placemark(point,{style: s});
@@ -32,7 +32,7 @@ map.addOverlay(gCollection1);
 
 // second group
 var gCollection2 = new YMaps.GeoObjectCollection();
-for (var i = 0; i < 2; i++) {
+for (var i = 0; i < 4; i++) {
     var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
                                    pointLb.getLat() + span.y * Math.random());
     var placemark = new YMaps.Placemark(point,{style: s});
@@ -43,7 +43,7 @@ map.addOverlay(gCollection2);
 
 // third group
 var gCollection3 = new YMaps.GeoObjectCollection();
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i < 4; i++) {
     var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
                                    pointLb.getLat() + span.y * Math.random());
     var placemark = new YMaps.Placemark(point,{style: s});
