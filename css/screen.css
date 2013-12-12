@@ -40,10 +40,10 @@ a img, fieldset { border: none; }
 .nav .nav__2 { width: 260px; }
 .nav .nav__3 { width: 160px; }
 
-.mainslider { height: 325px; position: absolute; top: 152px; left: 0px; width: 100%; }
+.mainslider { height: 325px; background: url(../img/supersot.png) no-repeat 515px 0px; position: absolute; top: 152px; left: 0px; width: 100%; }
 .mainslider .mainslider__slides { height: 303px; }
 .mainslider .mainslider__slide { height: 303px; width: 100%; float: left; }
-.mainslider .mainslider__slide .mainslider__pic { position: absolute; left: 125px; top: 0px; height: 303px; }
+.mainslider .mainslider__slide .mainslider__pic { position: absolute; left: 136px; top: 0px; height: 303px; }
 .mainslider .mainslider__slide .mainslider__text { position: absolute; left: 626px; top: 40px; width: 356px; }
 .mainslider .mainslider__slide .mainslider__text h2 { font-size: 42px; font-family: "pbold", arial, sans-serif; color: #3b3b3b; text-transform: uppercase; line-height: 1; min-height: 1.6em; }
 .mainslider .mainslider__slide .mainslider__text h2 span { font-size: 30px; display: block; }

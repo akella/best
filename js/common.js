@@ -24,7 +24,7 @@ for (var i = 0; i < 5; i++) {
     var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
                                    pointLb.getLat() + span.y * Math.random());
     var placemark = new YMaps.Placemark(point,{style: s});
-    placemark.name = "<div class='baloon'><img src='http://placedog.com/100/50' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+    placemark.name = "<div class='baloon'><img src='img/logo"+(Math.floor(Math.random() * 14) + 1)+".png' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
     gCollection1.add(placemark);
 }
 map.addOverlay(gCollection1);
@@ -36,7 +36,7 @@ for (var i = 0; i < 5; i++) {
     var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
                                    pointLb.getLat() + span.y * Math.random());
     var placemark = new YMaps.Placemark(point,{style: s});
-    placemark.name = "<div class='baloon'><img src='http://placedog.com/100/50' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+    placemark.name = "<div class='baloon'><img src='img/logo"+(Math.floor(Math.random() * 14) + 1)+".png' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
     gCollection2.add(placemark);
 }
 map.addOverlay(gCollection2);
@@ -47,7 +47,7 @@ for (var i = 0; i < 5; i++) {
     var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
                                    pointLb.getLat() + span.y * Math.random());
     var placemark = new YMaps.Placemark(point,{style: s});
-    placemark.name = "<div class='baloon'><img src='http://placedog.com/100/50' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+    placemark.name = "<div class='baloon'><img src='img/logo"+(Math.floor(Math.random() * 14) + 1)+".png' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
     gCollection3.add(placemark);
 }
 map.addOverlay(gCollection3);
