@@ -6,43 +6,89 @@ s.iconStyle = new YMaps.IconStyle(); // Создает стиль значка �
 s.iconStyle.href = "img/metka.png"; // Указываем путь к картинке
 s.iconStyle.size = new YMaps.Point(23, 34); // Размеры картинки
 s.iconStyle.offset = new YMaps.Point(-10, -19); // Сдвиг
-// var ownPlacemark = new YMaps.Placemark(coords, { 
-//     style: s // Указываем какой стиль применить
-// });
-//map.addOverlay(ownPlacemark);
+var map = new YMaps.Map(document.getElementById("YMapsID"));
+map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 9);
 
 
- var map = new YMaps.Map(document.getElementById("YMapsID"));
-  map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 9);
-      //map.addControl(new YMaps.ToolBar());
-      // map.addControl(new YMaps.Zoom());
-      // map.addControl(new YMaps.ScaleLine());
-      // map.addControl(new YMaps.TypeControl([
-      //     YMaps.MapType.MAP,
-      //     YMaps.MapType.SATELLITE,
-      //     YMaps.MapType.HYBRID
-      // ], [0, 1, 2]));
 
+
+// just test data
+var bounds = map.getBounds(),
+    pointLb = bounds.getLeftBottom(),
+    span = bounds.getSpan();
+
+
+// first group
+var gCollection1 = new YMaps.GeoObjectCollection();
+for (var i = 0; i < 1; i++) {
+    var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
+                                   pointLb.getLat() + span.y * Math.random());
+    var placemark = new YMaps.Placemark(point,{style: s});
+    placemark.name = "<div class='baloon'><img src='http://placedog.com/100/50' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+    gCollection1.add(placemark);
+}
+map.addOverlay(gCollection1);
+
+
+// second group
+var gCollection2 = new YMaps.GeoObjectCollection();
+for (var i = 0; i < 2; i++) {
+    var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
+                                   pointLb.getLat() + span.y * Math.random());
+    var placemark = new YMaps.Placemark(point,{style: s});
+    placemark.name = "<div class='baloon'><img src='http://placedog.com/100/50' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+    gCollection2.add(placemark);
+}
+map.addOverlay(gCollection2);
+
+// third group
+var gCollection3 = new YMaps.GeoObjectCollection();
+for (var i = 0; i < 3; i++) {
+    var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
+                                   pointLb.getLat() + span.y * Math.random());
+    var placemark = new YMaps.Placemark(point,{style: s});
+    placemark.name = "<div class='baloon'><img src='http://placedog.com/100/50' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+    gCollection3.add(placemark);
+}
+map.addOverlay(gCollection3);
+
+
+
+
+$('.search__group').click(function(event) {
+  
+  //this is shit
+  asd = $(this).attr('href').substring(1);
+  if(asd=='1' && $(this).hasClass('is-active')) {map.removeOverlay(gCollection1);}
+  else{map.addOverlay(gCollection1);}
+
+  if(asd=='2' && $(this).hasClass('is-active')) {map.removeOverlay(gCollection2);}
+  else{map.addOverlay(gCollection2);}
+  if(asd=='3' && $(this).hasClass('is-active')) {map.removeOverlay(gCollection3);}
+  else{map.addOverlay(gCollection3);}
+  $(this).toggleClass('is-active');
+  return false;
+});
   //adding mark example
-  var geocoder = new YMaps.Geocoder("Россия, Москва, ул. Тверская, д. 43"); 
-  YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
-      var geoCoords = geocoder.get(0).getGeoPoint(),
-      geoPlacemark = new YMaps.Placemark(geoCoords,{style: s});
-      // console.log(geoCoords);
-      geoPlacemark.name = "Имя метки1"; // Заголовок балуна
-      geoPlacemark.description = "Описание метки"; // Текст балуна
-      map.addOverlay(geoPlacemark); 
-  });
+  // var geocoder = new YMaps.Geocoder("Россия, Москва, ул. Тверская, д. 43"); 
+  // YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
+  //     var geoCoords = geocoder.get(0).getGeoPoint(),
+  //     geoPlacemark = new YMaps.Placemark(geoCoords,{style: s});
+  //     // console.log(geoCoords);
+  //     geoPlacemark.name = "Имя метки1"; // Заголовок балуна
+  //     geoPlacemark.description = "Описание метки"; // Текст балуна
+  //     map.addOverlay(geoPlacemark); 
+  // });
 
-  var geocoder = new YMaps.Geocoder("Россия, Москва, Казанский переулок, д. 16"); 
-  YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
-      var geoCoords = geocoder.get(0).getGeoPoint(),
-      geoPlacemark = new YMaps.Placemark(geoCoords,{style: s});
-      // console.log(geoCoords);
-      geoPlacemark.name = "Имя метки2"; // Заголовок балуна
-      geoPlacemark.description = "Описание метки"; // Текст балуна
-      map.addOverlay(geoPlacemark); 
-  });
+  // var geocoder = new YMaps.Geocoder("Россия, Москва, Казанский переулок, д. 16"); 
+  // YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
+  //     var geoCoords = geocoder.get(0).getGeoPoint(),
+  //     geoPlacemark = new YMaps.Placemark(geoCoords,{style: s});
+  //     // console.log(geoCoords);
+  //     geoPlacemark.name = "Имя метки2"; // Заголовок балуна
+  //     geoPlacemark.description = "Описание метки"; // Текст балуна
+  //     map.addOverlay(geoPlacemark); 
+  // });
 
 
 
@@ -52,10 +98,7 @@ s.iconStyle.offset = new YMaps.Point(-10, -19); // Сдвиг
     $(this).parent().toggleClass('is-opened');
     return false;
   });
-  $('.search__group').click(function(event) {
-    $(this).toggleClass('is-active');
-    return false;
-  });
+  
   $('.js-show').click(function(event) {
     $('.search__advanced').toggle();
     //$('.search').toggleClass('search_advanced');
