@@ -1,12 +1,50 @@
 $(document).ready(function() {
-//067 93 40
+
+ var map = new YMaps.Map(document.getElementById("YMapsID"));
+                    map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 9);
+                        map.addControl(new YMaps.ToolBar());
+                        map.addControl(new YMaps.Zoom());
+                        map.addControl(new YMaps.ScaleLine());
+                        map.addControl(new YMaps.TypeControl([
+                            YMaps.MapType.MAP,
+                            YMaps.MapType.SATELLITE,
+                            YMaps.MapType.HYBRID
+                        ], [0, 1, 2]));
+
+                    //adding mark example
+                    var geocoder = new YMaps.Geocoder("Россия, Москва, ул. Тверская, д. 43"); 
+                    YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
+                        var geoCoords = geocoder.get(0).getGeoPoint(),
+                        geoPlacemark = new YMaps.Placemark(geoCoords);
+                        // console.log(geoCoords);
+                        geoPlacemark.name = "Имя метки1"; // Заголовок балуна
+                        geoPlacemark.description = "Описание метки"; // Текст балуна
+                        map.addOverlay(geoPlacemark); 
+                    });
+
+                    var geocoder = new YMaps.Geocoder("Россия, Москва, Казанский переулок, д. 16"); 
+                    YMaps.Events.observe(geocoder, geocoder.Events.Load, function (geocoder) {
+                        var geoCoords = geocoder.get(0).getGeoPoint(),
+                        geoPlacemark = new YMaps.Placemark(geoCoords);
+                        // console.log(geoCoords);
+                        geoPlacemark.name = "Имя метки2"; // Заголовок балуна
+                        geoPlacemark.description = "Описание метки"; // Текст балуна
+                        map.addOverlay(geoPlacemark); 
+                    });
+
+
+
+
+
+
   $('.js-show').click(function(event) {
     $('.search__advanced').toggle();
     //$('.search').toggleClass('search_advanced');
     $('.search__more').slideDown();
-    $('.search, #ubermap').animate({ height: '417px' }, 300,function(){
+    $('.search, #YMapsID').animate({ height: '417px' }, 300,function(){
 
-      map.invalidateSize();
+      map.redraw();
+      $('.search').addClass('search_advanced');
     });
     return false;
   });
@@ -14,18 +52,33 @@ $(document).ready(function() {
   $('.js-hide').click(function(event) {
     $('.search__advanced').toggle();
     $('.search__more').slideUp();
-    $('.search,#ubermap').animate({ height: '234px' }, 300);
-    $('.search').toggleClass('search_advanced');
+    $('.search,#YMapsID').animate({ height: '234px' }, 300);
+    $('.search').removeClass('search_advanced');
     return false;
   });
 
   $('.js-togglemap').click(function(event) {
-    $('.search__mapimg').animate({ width: '1000px' }, 300);
+    //map.redraw() 
+    
     if($('.search__mapimg').width()>500){
-      $('.search__mapimg').animate({ width: '268px' }, 300);
+      
+      if($('.search').hasClass('search_advanced')){
+        $('.search__mapimg').animate({ width: '268px', height: '417px' }, 300,function(){
+          map.redraw();
+        });
+      }
+      else{
+        $('.search__mapimg').animate({ width: '268px', height: '234px' }, 300,function(){
+          map.redraw();
+        });
+        $('.search').animate({ height: '234px' }, 300);
+      }
+      
     }
     else{
-      $('.search__mapimg').animate({ width: '1000px' }, 300);
+      $('.search__mapimg, .search').animate({ width: '1000px',height: '417px' }, 300,function(){
+        map.redraw();
+      });
     }
     $(this).children('span').toggle();
     return false;

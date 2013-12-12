@@ -59,7 +59,7 @@ a img, fieldset { border: none; }
 .mainslider .mainslider__prev:hover { background: url('../img/icons-s392f359099.png') 0 -2797px no-repeat; width: 72px; height: 79px; }
 .mainslider .mainslider__prev:active { background: url('../img/icons-s392f359099.png') 0 -796px no-repeat; width: 72px; height: 79px; }
 .mainslider .mainslider__pagination { position: absolute; text-align: center; bottom: 0; left: 0; width: 100%; }
-.mainslider .mainslider__pagination a, .mainslider .mainslider__pagination span { display: inline-block; margin-right: 6px; width: 11px; height: 11px; vertical-align: middle; background: #c1c4c7; border-radius: 11px; font: 0/0 a; text-shadow: none; color: transparent; }
+.mainslider .mainslider__pagination a, .mainslider .mainslider__pagination span { display: inline-block; margin-right: 6px; width: 11px; height: 11px; vertical-align: middle; background: #c1c4c7; border-radius: 11px; font: 0/0 a; text-shadow: none; color: transparent; cursor: pointer; }
 .mainslider .mainslider__pagination a:hover, .mainslider .mainslider__pagination span:hover { background: #878c93; }
 .mainslider .mainslider__pagination a.is-active, .mainslider .mainslider__pagination a.cycle-pager-active, .mainslider .mainslider__pagination span.is-active, .mainslider .mainslider__pagination span.cycle-pager-active { background: #323c46; }
 
@@ -175,12 +175,12 @@ a img, fieldset { border: none; }
 .search__form .search__pricerange, .search__form .search__rangerange { background: #737d81; width: 292px; }
 
 .search__map { float: right; width: 264px; position: absolute; right: 0; top: 0; bottom: 0; border-radius: 0 10px 10px 0; z-index: 200; }
-.search__map .search__mapimg { border-radius: 0 10px 10px 0; height: 234px; width: 264px; }
+.search__map .search__mapimg { border-radius: 0 10px 10px 0; height: 234px; width: 264px; position: absolute; right: 0; top: 0; }
 .search__map .search__mapimg iframe { border-radius: 0 10px 10px 0; }
 .search_advanced .search__map .search__mapimg { height: auto; bottom: 0; }
 .search_advanced .search__map .search__mapimg iframe { height: 100% !important; bottom: 0; position: absolute; left: 0; right: 0; bottom: 0; top: 0; }
 .search__map h3 { font-size: 15px; font-weight: normal; text-transform: uppercase; color: #3b3b3b; left: 0px; top: -45px; position: absolute; }
-.search__map .search__maplink { position: absolute; bottom: 10px; right: 10px; background: #313b47; border-radius: 2px; text-transform: uppercase; font-size: 10px; font-family: "pbold", arial, sans-serif; color: white; text-decoration: none; padding: 0px 14px; height: 26px; line-height: 26px; cursor: pointer; }
+.search__map .search__maplink { position: absolute; bottom: 10px; right: 10px; background: #313b47; border-radius: 2px; text-transform: uppercase; font-size: 10px; font-family: "pbold", arial, sans-serif; color: white; text-decoration: none; padding: 0px 14px; height: 26px; line-height: 26px; cursor: pointer; z-index: 100; }
 
 #ubermap { position: absolute !important; top: 0; right: 0; min-height: 234px; }
 
