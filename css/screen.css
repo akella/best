@@ -813,6 +813,18 @@ a img, fieldset { border: none; }
 .monitoring .monitoring__title a:hover { text-decoration: underline; }
 .monitoring .monitoring__text { margin-bottom: 25px; }
 
+.table { margin-bottom: 40px; margin-top: 20px; }
+.table table { width: 100%; border-spacing: 0; border-collapse: collapse; }
+.table table thead th { text-align: left; background: #e8e9ea; padding: 10px 20px; color: #909091; text-align: left; font-weight: normal; }
+.table table thead th:first-child { border-radius: 4px 0 0 4px; }
+.table table thead th:last-child { border-radius: 0 4px 4px 0; }
+.table table thead th a { font-size: 14px; color: #3b3b3b; font-family: "pbold", arial, sans-serif; }
+.table table tbody tr:nth-child(2n) td { background: #f8f8f8; }
+.table table tbody td { text-align: left; padding: 10px 20px; color: #3b3b3b; font-size: 13px; }
+.table table tbody td:first-child { border-radius: 4px 0 0 4px; }
+.table table tbody td:last-child { border-radius: 0 4px 4px 0; }
+.table table tbody td strong { color: #177bca; font-weight: normal; font-family: "pbold", arial, sans-serif; }
+
 .h3 { margin-top: 50px; border-top: 1px solid #c1c4c7; text-align: center; font-size: 23px; margin-bottom: 5px; font-family: "pbold", arial, sans-serif; }
 .h3 span { display: inline-block; background: white; padding: 0 10px; position: relative; top: -17px; }
 
