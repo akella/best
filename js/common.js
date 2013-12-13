@@ -36,7 +36,7 @@ var gCollection2 = new YMaps.GeoObjectCollection();
     var point = new YMaps.GeoPoint(37.50768,
                                    55.755347);
     var placemark = new YMaps.Placemark(point,{style: s});
-    placemark.name = "<div class='baloon'><img src='img/logo4.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Фили Град»</div><div class='baloon__text'>Район Филевский парк, Береговой проезд, владение 5. Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро.</div></div>"; // Заголовок балуна
+    placemark.name = "<div class='baloon'><img src='img/logo3.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Фили Град»</div><div class='baloon__text'>Район Филевский парк, Береговой проезд, владение 5. Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро.</div></div>"; // Заголовок балуна
     gCollection1.add(placemark);
 
 map.addOverlay(gCollection1);
@@ -47,7 +47,7 @@ var gCollection3 = new YMaps.GeoObjectCollection();
     var point = new YMaps.GeoPoint(37.984155,
                                    55.603973);
     var placemark = new YMaps.Placemark(point,{style: s});
-    placemark.name = "<div class='baloon'><img src='img/logo5.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Новые Островцы»</div><div class='baloon__text'>12 км от МКАД, Люберецкий район, в п. Октябрьский. Доступна ипотека, продается по ФЗ-214.</div></div>"; // Заголовок балуна
+    placemark.name = "<div class='baloon'><img src='img/logo9.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Новые Островцы»</div><div class='baloon__text'>12 км от МКАД, Люберецкий район, в п. Октябрьский. Доступна ипотека, продается по ФЗ-214.</div></div>"; // Заголовок балуна
     gCollection3.add(placemark);
 
 map.addOverlay(gCollection3);
