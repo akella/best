@@ -2,9 +2,6 @@ YMaps.jQuery(function () {
             // Создание экземпляра карты и его привязка к созданному контейнеру
             var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
 
-            // Установка для карты ее центра и масштаба
-
-
             var s = new YMaps.Style(); // Создаем стиль 
             s.iconStyle = new YMaps.IconStyle(); // Создает стиль значка метки
             s.iconStyle.href = "img/metka.png"; // Указываем путь к картинке
@@ -13,26 +10,17 @@ YMaps.jQuery(function () {
             var map = new YMaps.Map(document.getElementById("YMapsID"));
             map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 9);
 
-
-
-
-            // Добавление элементов управления
-            // map.enableScrollZoom();
-            // map.addControl(new YMaps.ToolBar());
-            // map.addControl(new YMaps.TypeControl());
-            // map.addControl(new YMaps.Zoom());
-
             // Группы объектов
             var groups = [
                 createGroup("Новостройки Москвы", [
-                    createPlacemark(new YMaps.GeoPoint(37.511403, 55.524005), "","<div class='baloon'><img src='img/logo1.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Новое Бутово»</div><div class='baloon__text'>16 км от МКАД, рядом г. Щелково Продается по ФЗ-214, дом готов, квартиры с отделкой, сдача 4 квартал 2013 г.</div></div>"),
-                    createPlacemark(new YMaps.GeoPoint(37.50768, 55.755347), "","<div class='baloon'><img src='img/logo3.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Фили Град»</div><div class='baloon__text'>Район Филевский парк, Береговой проезд, владение 5. Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро.</div></div>")
+                    createPlacemark(new YMaps.GeoPoint(37.511403, 55.524005), "","img/logo1.png", "Жилой комплекс «Новое Бутово»", "16 км от МКАД, рядом г. Щелково Продается по ФЗ-214, дом готов, квартиры с отделкой, сдача 4 квартал 2013 г."),
+                    createPlacemark(new YMaps.GeoPoint(37.50768, 55.755347), "","img/logo3.png", "Жилой комплекс «Фили Град»","Район Филевский парк, Береговой проезд, владение 5. Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро.")
                 ], s),
                 createGroup("Новостройки Новой Москвы", [
                     //todo
                 ], s),
                 createGroup("Новостройки Подмосковья", [
-                    createPlacemark(new YMaps.GeoPoint(37.984155, 55.603973), "","<div class='baloon'><img src='img/logo9.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Новые Островцы»</div><div class='baloon__text'>12 км от МКАД, Люберецкий район, в п. Октябрьский. Доступна ипотека, продается по ФЗ-214.</div></div>")
+                    createPlacemark(new YMaps.GeoPoint(37.984155, 55.603973), "","img/logo9.png", "Жилой комплекс «Новые Островцы»", "12 км от МКАД, Люберецкий район, в п. Октябрьский. Доступна ипотека, продается по ФЗ-214.")
                 ], s)
             ];
 
@@ -153,11 +141,11 @@ control2 = new YMaps.ScaleLine();
         };
 
         // Создание метки
-        function createPlacemark (point, name, description) {
+        function createPlacemark (point, name, logo, title, descr) {
             var placemark = new YMaps.Placemark(point);
 
             placemark.name = name;
-            placemark.description = description;
+            placemark.description = "<div class='baloon'><div class='baloon__logo'><img src='"+logo+"'/></div><div class='baloon__title'>Жилой комплекс «Фили Град»</div><div class='baloon__text'>Район Филевский парк, Береговой проезд, владение 5. Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро.</div></div>";
 
             return placemark
         }

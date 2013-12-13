@@ -201,8 +201,11 @@ a img, fieldset { border: none; }
 
 .baloon { width: 260px; padding: 10px; }
 .baloon div { overflow: hidden; }
-.baloon img { float: left; margin-right: 20px; }
+.baloon img { float: left; }
 .baloon .baloon__text { font-weight: normal; color: #555555; font-size: 13px; clear: both; padding-top: 10px; }
+.baloon .baloon__title { font-size: 16px; color: #333333; }
+.baloon .baloon__logo { float: left; width: 100px; margin-right: 20px; }
+.baloon .baloon__logo img { display: block; width: 100%; }
 
 #ubermap { position: absolute !important; top: 0; right: 0; min-height: 234px; }
 
