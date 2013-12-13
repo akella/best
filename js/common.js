@@ -22,37 +22,46 @@ var bounds = map.getBounds(),
 
 // first group
 var gCollection1 = new YMaps.GeoObjectCollection();
-for (var i = 0; i < 5; i++) {
-    var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
-                                   pointLb.getLat() + span.y * Math.random());
+    var point = new YMaps.GeoPoint(37.511403,
+                                   55.524005);
     var placemark = new YMaps.Placemark(point,{style: s});
-    placemark.name = "<div class='baloon'><img src='img/logo"+(Math.floor(Math.random() * 14) + 1)+".png' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+    placemark.name = "<div class='baloon'><img src='img/logo1.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Новое Бутово»</div><div class='baloon__text'>16 км от МКАД, рядом г. Щелково Продается по ФЗ-214, дом готов, квартиры с отделкой, сдача 4 квартал 2013 г.</div></div>"; // Заголовок балуна
     gCollection1.add(placemark);
-}
-map.addOverlay(gCollection1);
+
 
 
 // second group
 var gCollection2 = new YMaps.GeoObjectCollection();
-for (var i = 0; i < 5; i++) {
-    var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
-                                   pointLb.getLat() + span.y * Math.random());
+
+    var point = new YMaps.GeoPoint(37.50768,
+                                   55.755347);
     var placemark = new YMaps.Placemark(point,{style: s});
-    placemark.name = "<div class='baloon'><img src='img/logo"+(Math.floor(Math.random() * 14) + 1)+".png' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
-    gCollection2.add(placemark);
-}
-map.addOverlay(gCollection2);
+    placemark.name = "<div class='baloon'><img src='img/logo4.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Фили Град»</div><div class='baloon__text'>Район Филевский парк, Береговой проезд, владение 5. Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро.</div></div>"; // Заголовок балуна
+    gCollection1.add(placemark);
+
+map.addOverlay(gCollection1);
 
 // third group
 var gCollection3 = new YMaps.GeoObjectCollection();
-for (var i = 0; i < 5; i++) {
-    var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
-                                   pointLb.getLat() + span.y * Math.random());
+
+    var point = new YMaps.GeoPoint(37.984155,
+                                   55.603973);
     var placemark = new YMaps.Placemark(point,{style: s});
-    placemark.name = "<div class='baloon'><img src='img/logo"+(Math.floor(Math.random() * 14) + 1)+".png' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+    placemark.name = "<div class='baloon'><img src='img/logo5.png' style='float:left'   /><div style='font-size:16px;color:#333;'>Жилой комплекс «Новые Островцы»</div><div class='baloon__text'>12 км от МКАД, Люберецкий район, в п. Октябрьский. Доступна ипотека, продается по ФЗ-214.</div></div>"; // Заголовок балуна
     gCollection3.add(placemark);
-}
+
 map.addOverlay(gCollection3);
+
+// random group
+// var gCollection3 = new YMaps.GeoObjectCollection();
+// for (var i = 0; i < 5; i++) {
+//     var point = new YMaps.GeoPoint(pointLb.getLng() + span.x * Math.random(),
+//                                    pointLb.getLat() + span.y * Math.random());
+//     var placemark = new YMaps.Placemark(point,{style: s});
+//     placemark.name = "<div class='baloon'><img src='img/logo"+(Math.floor(Math.random() * 14) + 1)+".png' style='float:left'   /><div style='font-size:16px;color:#333;'>Название</div><div style='font-weight:normal;color:#555;font-size:13px;clear:both;padding-top:10px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas voluptatum dolorem praesentium modi harum nihil sequi nemo similique ea at animi quo! Voluptatibus, facere, vel modi tempore a nobis.</div></div>"; // Заголовок балуна
+//     gCollection3.add(placemark);
+// }
+// map.addOverlay(gCollection3);
 
 
 
@@ -69,6 +78,7 @@ $('.search__group').click(function(event) {
   if(asd=='3' && $(this).hasClass('is-active')) {map.removeOverlay(gCollection3);}
   else{map.addOverlay(gCollection3);}
   $(this).toggleClass('is-active');
+  map.update();
   return false;
 });
   //adding mark example
