@@ -13,14 +13,109 @@ YMaps.jQuery(function () {
             // Группы объектов
             var groups = [
                 createGroup("Новостройки Москвы", [
-                    createPlacemark(new YMaps.GeoPoint(37.511403, 55.524005), "","img/logo1.png", "Жилой комплекс «Новое Бутово»", "16 км от МКАД, рядом г. Щелково Продается по ФЗ-214, дом готов, квартиры с отделкой, сдача 4 квартал 2013 г."),
-                    createPlacemark(new YMaps.GeoPoint(37.50768, 55.755347), "","img/logo3.png", "Жилой комплекс «Фили Град»","Район Филевский парк, Береговой проезд, владение 5. Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро.")
+                    createPlacemark(new YMaps.GeoPoint(37.511403, 55.524005), "",
+                        "img/l/m-buid-logo-1.png", 
+                        "<a href='http://best-novostroy.ru/sales/novoe_butovo/'>Жилой комплекс «Новое Бутово»</a>", 
+                        "6 км от МКАД, рядом район «Южное бутово». Доступна ипотека, продается по ФЗ-214, рядом с метро"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.508924, 55.755689), "",
+                        "img/l/m-buid-logo-2.png", 
+                        "<a href='http://best-novostroy.ru/sales/fili-grad/'>Жилой комплекс «Фили Град»</a>", 
+                        "Район Филевский парк, Береговой проезд, владение 5 <br>Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.473764, 55.863278), "",
+                        "img/l/m-buid-logo-no.png", 
+                        "<a href='http://best-novostroy.ru/sales/whitepark/'>Жилой комплекс «Белый парк»</a>", 
+                        "Москва, Левобережный район. Метро «Речной вокзал» в пешей доступности. <br>Доступна ипотека. Сдача объекта в третьем квартале 2014 г. "),
+
+                    createPlacemark(new YMaps.GeoPoint(37.471714, 55.86643), "",
+                        "img/l/m-buid-logo-no.png", 
+                        "<a href='http://best-novostroy.ru/sales/novoe_butovo/'>Жилой комплекс «Дом в Левобережном»</a>", 
+                        "Москва, Левобережный район. Метро «Речной вокзал» в пешей доступности. Доступна ипотека")
+
                 ], s),
                 createGroup("Новостройки Новой Москвы", [
-                    //todo
+                    createPlacemark(new YMaps.GeoPoint(37.354038, 55.517789), "",
+                        "img/l/m-buid-logo-3.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/novye-vatutinki/'>Жилой комплекс «Новые Ватутинки. Микрорайон Центральный»</a>", 
+                        "14 км от МКАД, Ленинский район (Новая Москва), рядом д. Десна <br>Доступна ипотека, рассрочка, продается по ФЗ-214"),
+                    createPlacemark(new YMaps.GeoPoint((37.370303, 55.512797), "",
+                        "img/l/m-buid-logo-4.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/novye-vatutinki/'>Жилой комплекс «Новые Ватутинки. Южный квартал»</a>", 
+                        "14 км от МКАД, Ленинский район (Новая Москва), рядом д. Десна <br>Доступна ипотека, рассрочка, продается по ФЗ-214"),
+                    createPlacemark(new YMaps.GeoPoint(37.336158, 55.552112), "",
+                        "img/l/m-buid-logo-5.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/marino/'>Жилой комплекс «Марьино Град» </a>", 
+                        "14 км от МКАД, Ленинский район (Новая Москва) рядом с поселком Марьино. Продается по ФЗ-214. Есть скидки и рассрочка, доступна ипотека"),
+                    createPlacemark(new YMaps.GeoPoint(37.316592, 55.549843), "",
+                        "img/l/m-buid-logo-no.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/sportivnyy-kvartal/'>Жилой комплекс «Спортивный квартал»</a>", 
+                        "Район Филевский парк, Береговой проезд, владение 5 <br>Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро")
                 ], s),
                 createGroup("Новостройки Подмосковья", [
-                    createPlacemark(new YMaps.GeoPoint(37.984155, 55.603973), "","img/logo9.png", "Жилой комплекс «Новые Островцы»", "12 км от МКАД, Люберецкий район, в п. Октябрьский. Доступна ипотека, продается по ФЗ-214.")
+                    createPlacemark(new YMaps.GeoPoint(37.302743, 55.662846), "",
+                        "img/l/m-buid-logo-6.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/odintsovskiy_park/'>Жилой комплекс «Одинцовский Парк»</a>", 
+                        "8 км от МКАД, Одинцовский район, рядом город Одинцово. Продается по ФЗ-214. Есть скидки и рассрочка, доступна ипотека"),
+                    createPlacemark(new YMaps.GeoPoint(37.245774, 55.681413), "",
+                        "img/l/m-buid-logo-no.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/odinburg/'>Жилой комплекс «Одинбург»</a>", 
+                        "11 км от МКАД, город Одинцово. Доступна ипотека, продается по ФЗ-214. Можно купить по стартовым ценам"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.8566, 55.674915), "",
+                        "img/l/m-buid-logo-no.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/belye_rosy/'>Жилой комплекс «Белые росы»</a>", 
+                        "3 км от МКАД, город Котельники. Метро «Жулебино» в пешей доступности. Продается по ФЗ-214"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.721705, 55.908491), "",
+                        "img/l/m-buid-logo-7.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/9-18/'>Жилой комплекс «9-18, Жилой квартал»</a>", 
+                        "7 км от МКАД, в центре города Мытищи. Доступна ипотека, продается по ФЗ-214"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.976122, 55.608461), "",
+                        "img/l/m-buid-logo-8.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/oktyabr/'>Жилой комплекс «Октябрь»</a>", 
+                        "12 км от МКАД, Люберецкий район, в поселке Октябрьский. Продается по ФЗ-214. Есть рассрочка, доступна ипотека"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.981258, 55.603462), "",
+                        "img/l/m-buid-logo-9.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/novye-vatutinki/'>Жилой комплекс «Новые Островцы»</a>", 
+                        "12 км от МКАД, Люберецкий район, в поселке Октябрьский. Доступна ипотека, продается по ФЗ-214"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.371715, 55.826481), "",
+                        "img/l/m-buid-logo-10.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/spasskiy-most/'>Жилой комплекс «Спасский Мост»</a>", 
+                        "2 км от МКАД, находится между Москвой и Красногорском. Продается по ФЗ-214. Есть рассрочка, доступна ипотека. Идет выдача ключей"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.986302, 55.905491), "",
+                        "img/l/m-buid-logo-11.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/dom_na_moskovskoi/'>Жилой комплекс «Дом на Московской»</a>", 
+                        "16 км от МКАД, рядом город Щелково. Продается по ФЗ-214. Дом построен, квартиры с отделкой"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.398884, 55.689382), "",
+                        "img/l/m-buid-logo-12.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/skolkovo/'>Жилой комплекс «Форт Сколково»</a>", 
+                        "1 км от МКАД, Одинцовский район, поселок Заречье. Дом сдан, идет выдача ключей"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.37688, 55.708528), "",
+                        "img/l/m-buid-logo-13.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/slavyanka/'>Жилой комплекс «Славянка-Сколково»</a>", 
+                        "2 км от МКАД, Одинцовский район, п. Новоивановское. Есть рассрочка, доступна ипотека. Идет выдача ключей"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.184725, 55.85715), "",
+                        "img/l/m-buid-logo-15.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/nahabino/'>Жилой комплекс «ЭКО ПАРК Нахабино»</a>", 
+                        "15 км от МКАД, Красногорский район, рядом с поселком Нахабино"),
+
+                    createPlacemark(new YMaps.GeoPoint(37.281363, 55.898334), "",
+                        "img/l/m-buid-logo-16.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/aristovo-mitino/'>Жилой комплекс «Аристово-Митино»</a>", 
+                        "10 км от МКАД, рядом деревня Аристово. Есть рассрочка, доступна ипотека"),
+                    
+                    createPlacemark(new YMaps.GeoPoint(37.316036, 55.688789), "",
+                        "img/l/m-buid-logo-no.png", 
+                        "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/mamonovo/'>Жилой комплекс «Одинцово-Мамоново»</a>", 
+                        "5 км от МКАД, Одинцовский район, в поселке Мамоново")
                 ], s)
             ];
 
@@ -145,7 +240,7 @@ control2 = new YMaps.ScaleLine();
             var placemark = new YMaps.Placemark(point);
 
             placemark.name = name;
-            placemark.description = "<div class='baloon'><div class='baloon__logo'><img src='"+logo+"'/></div><div class='baloon__title'>Жилой комплекс «Фили Град»</div><div class='baloon__text'>Район Филевский парк, Береговой проезд, владение 5. Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро.</div></div>";
+            placemark.description = "<div class='baloon'><div class='baloon__logo'><img src='"+logo+"'/></div><div class='baloon__title'>"+title+"</div><div class='baloon__text'>"+descr+"</div></div>";
 
             return placemark
         }
