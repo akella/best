@@ -39,18 +39,22 @@ YMaps.jQuery(function () {
                         "img/l/m-buid-logo-3.png", 
                         "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/novye-vatutinki/'>Жилой комплекс «Новые Ватутинки. Микрорайон Центральный»</a>", 
                         "14 км от МКАД, Ленинский район (Новая Москва), рядом д. Десна <br>Доступна ипотека, рассрочка, продается по ФЗ-214"),
-                    createPlacemark(new YMaps.GeoPoint((37.370303, 55.512797), "",
+
+                    createPlacemark(new YMaps.GeoPoint(37.370303, 55.512797), "",
                         "img/l/m-buid-logo-4.png", 
                         "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/novye-vatutinki/'>Жилой комплекс «Новые Ватутинки. Южный квартал»</a>", 
                         "14 км от МКАД, Ленинский район (Новая Москва), рядом д. Десна <br>Доступна ипотека, рассрочка, продается по ФЗ-214"),
+
                     createPlacemark(new YMaps.GeoPoint(37.336158, 55.552112), "",
                         "img/l/m-buid-logo-5.png", 
                         "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/marino/'>Жилой комплекс «Марьино Град» </a>", 
                         "14 км от МКАД, Ленинский район (Новая Москва) рядом с поселком Марьино. Продается по ФЗ-214. Есть скидки и рассрочка, доступна ипотека"),
+
                     createPlacemark(new YMaps.GeoPoint(37.316592, 55.549843), "",
                         "img/l/m-buid-logo-no.png", 
                         "<a href='http://best-novostroy.ru/novostroyki_novoy_moskvy/sportivnyy-kvartal/'>Жилой комплекс «Спортивный квартал»</a>", 
                         "Район Филевский парк, Береговой проезд, владение 5 <br>Доступна ипотека, рассрочка, продается по ФЗ-214, рядом с метро")
+
                 ], s),
                 createGroup("Новостройки Подмосковья", [
                     createPlacemark(new YMaps.GeoPoint(37.302743, 55.662846), "",
@@ -111,7 +115,7 @@ YMaps.jQuery(function () {
                         "img/l/m-buid-logo-16.png", 
                         "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/aristovo-mitino/'>Жилой комплекс «Аристово-Митино»</a>", 
                         "10 км от МКАД, рядом деревня Аристово. Есть рассрочка, доступна ипотека"),
-                    
+
                     createPlacemark(new YMaps.GeoPoint(37.316036, 55.688789), "",
                         "img/l/m-buid-logo-no.png", 
                         "<a href='http://best-novostroy.ru/novostroyki_podmoskovya/mamonovo/'>Жилой комплекс «Одинцово-Мамоново»</a>", 
