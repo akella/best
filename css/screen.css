@@ -968,9 +968,9 @@ a img, fieldset { border: none; }
 .scroll-pane:focus, .scroll-pane:active { outline: none; }
 .scroll-pane .spec-table { margin-bottom: 0; width: 98.5%; }
 
-.overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: black; background: rgba(0, 0, 0, 0.37); z-index: 99; }
+.overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: black; background: rgba(0, 0, 0, 0.37); z-index: 999; }
 
-.superpopup { position: fixed; left: 50%; top: 50%; width: 827px; height: 564px; margin-left: -413.5px; margin-top: -282px; background-color: white; -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); border-radius: 6px; z-index: 100; }
+.superpopup { position: fixed; left: 50%; top: 50%; width: 827px; height: 564px; margin-left: -413.5px; margin-top: -282px; background-color: white; -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); border-radius: 6px; z-index: 1000; }
 .superpopup .superpopup__content { padding: 20px 0 20px 28px; overflow: hidden; position: relative; }
 .superpopup .superpopup__title { font-weight: normal; font-size: 30px; color: #3b3b3b; font-family: "pbold", arial, sans-serif; margin-bottom: 24px; }
 .superpopup .superpopup__close { top: 29px; right: -56px; position: absolute; background: url('../img/icons-s96fbbc33dd.png') 0 -2886px no-repeat; width: 28px; height: 28px; cursor: pointer; }
