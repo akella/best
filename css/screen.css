@@ -186,7 +186,7 @@ a img, fieldset { border: none; }
 .search__form .search__range label, .search__form .search__range .search__rangelabel2, .search__form .search__range .search__rangelabel1 { margin-bottom: 20px; float: left; height: 31px; font-size: 12px; line-height: 31px; background: #697a7f; color: white; width: 79px; padding-left: 11px; border-radius: 4px 0 0 4px; border-right: 1px solid #606769; }
 .search__form .search__range label sup, .search__form .search__range .search__rangelabel2 sup, .search__form .search__range .search__rangelabel1 sup { vertical-align: top; line-height: 1; position: relative; top: 5px; }
 .search__form .search__range .search__rangelabel1, .search__form .search__range .search__rangelabel2 { width: 29px; padding: 0; text-align: center; border-radius: 0; }
-.search__form .search__range .search__rangevalue1, .search__form .search__range .search__rangevalue2 { float: left; width: 70px; background: white; height: 31px; line-height: 31px; text-align: center; }
+.search__form .search__range .search__rangevalue1, .search__form .search__range .search__rangevalue2 { float: left; width: 70px; background: white; height: 31px; line-height: 31px; text-align: center; border-style: none; padding: 0 !important; }
 .search__form .search__range .search__rangevalue2 { border-radius: 0 4px 4px 0; }
 .search__form .search__range .search__rangecurrency { position: absolute; right: -41px; top: 6px; color: white; font-size: 12px; width: 3em; text-align: left; }
 .search__form .search__pricerange, .search__form .search__rangerange { background: #737d81; width: 292px; }
