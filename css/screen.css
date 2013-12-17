@@ -262,6 +262,8 @@ a img, fieldset { border: none; }
 .items .item:hover, .items .item.is-active { -webkit-box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; -moz-box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; }
 .items .item .item__pics { float: left; width: 360px; }
 .items .item .item__pics img { float: left; margin: 0 5px 5px 0; }
+.items .item .item__pics .item__piclogo { float: left; width: 202px; height: 91px; line-height: 81px; border-radius: 10px; border: 1px solid #d6d6d6; margin: 0 5px 0 0; background: #f6f6f6; text-align: center; vertical-align: middle; }
+.items .item .item__pics .item__piclogo img { float: none; margin: 0; vertical-align: middle; }
 .items .item .item__logo { float: left; width: 210px; padding-top: 5px; text-align: center; height: 95px; line-height: 95px; }
 .items .item .item__logo img { vertical-align: middle; }
 .items .item.item_logo .item__info { width: 305px; }
