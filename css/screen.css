@@ -976,3 +976,19 @@ a img, fieldset { border: none; }
 .superpopup .superpopup__close { top: 29px; right: -56px; position: absolute; background: url('../img/icons-s96fbbc33dd.png') 0 -2886px no-repeat; width: 28px; height: 28px; cursor: pointer; }
 .superpopup .superpopup__nav { text-align: right; width: 100px; float: left; }
 .superpopup .superpopup__img { float: right; }
+
+.seo { border-top: 2px solid #dbdbdb; *zoom: 1; padding-top: 30px; padding-bottom: 30px; font-size: 13px; }
+.seo:before, .seo:after { content: " "; display: table; }
+.seo:after { clear: both; }
+.seo .seo__left { float: left; width: 710px; }
+.seo .seo__left p { margin-bottom: 1.2em; }
+.seo .seo__left h3 { font-weight: normal; font-family: "pbold", arial, sans-serif; margin-bottom: 1em; color: #3b3b3b; font-size: 16px; }
+.seo .seo__right { width: 260px; float: right; }
+
+.promolist { list-style: none; margin-top: 20px; }
+.promolist li { *zoom: 1; font-family: "pbold", arial, sans-serif; margin-bottom: 10px; font-size: 0; }
+.promolist li:before, .promolist li:after { content: " "; display: table; }
+.promolist li:after { clear: both; }
+.promolist li img { vertical-align: middle; margin-right: 10px; }
+.promolist li a { text-decoration: none; color: #333c46; }
+.promolist li span { display: inline-block; vertical-align: middle; width: 155px; font-size: 17px; }
