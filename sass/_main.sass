@@ -643,8 +643,72 @@
 			width: 235px 
 		.item__data3
 			width: 150px 
-			
-			
+	.item_in
+		margin-left: 0
+		margin-right: 0  
+		&:hover
+			+box-shadow(none)
+.wrapresults__switcher
+	float: right
+	text-align: right
+	width: 290px 
+	font-size: 12px 
+	color: #323C47
+	cursor: pointer 
+	padding-top: 15px 
+	a
+		text-decoration: none
+		color: #323C47
+		text-decoration: none  
+		opacity: .5 
+		margin-left: 20px 
+		i
+			display: inline-block
+			margin-right: 6px 
+			vertical-align: middle
+			position: relative
+			top: -1px 
+		span
+			border-bottom: 1px solid #E0E1E2 
+		&.is-active,&:hover
+			opacity: 1 
+	.wrapresults__list i
+		+s(list)
+	.wrapresults__objects i
+		+s(grid)
+.items__list
+	float: right
+	font-size: 12px 
+	background: #F0F1F1 
+	border-radius: 5px
+	padding: 7px 11px
+	line-height: 1  
+	text-decoration: none
+	position: relative
+	top: 20px 
+	b
+		font-weight: normal
+		color: #27A9DE
+		text-decoration: underline
+	i
+		display: inline-block
+		+s(arrowtop)
+		margin-right: 7px 
+		vertical-align: middle
+		 
+.table
+	+box-shadow(0 0 0px 1px #B1BFCE,0 0 0 4px #D5E1E8)
+	margin: 0 -20px 
+	padding: 20px 
+	border-radius: 10px
+	.items
+		margin: 0 
+.h2
+	font-size: 23px 
+	font-weight: normal
+	+bold
+	color: #3B3B3B
+	margin-bottom: 15px  
 .social
 	font-size: 13px 
 	vertical-align: middle
