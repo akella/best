@@ -979,13 +979,18 @@ a img, fieldset { border: none; }
 .superpopup .superpopup__nav { text-align: right; width: 100px; float: left; }
 .superpopup .superpopup__img { float: right; }
 
+.out_seomain { padding-bottom: 2570px; position: relative; }
+
 .seo { border-top: 2px solid #dbdbdb; *zoom: 1; padding-top: 30px; padding-bottom: 30px; font-size: 13px; }
 .seo:before, .seo:after { content: " "; display: table; }
 .seo:after { clear: both; }
+.seo.seo_main { position: absolute; height: 2520px; overflow: hidden; width: 100%; bottom: 0; left: 0; }
 .seo .seo__left { float: left; width: 710px; }
 .seo .seo__left p { margin-bottom: 1.2em; }
 .seo .seo__left h3 { font-weight: normal; font-family: "pbold", arial, sans-serif; margin-bottom: 1em; color: #3b3b3b; font-size: 16px; }
 .seo .seo__right { width: 260px; float: right; }
+.seo .seo__right h3 { border-top: 1px solid #efefef; padding-top: 12px; margin-bottom: 35px; font-family: "pbold", arial, sans-serif; font-weight: normal; }
+.seo .seo__right h3.h3first { border-top: none; padding-top: 0; }
 
 .promolist { list-style: none; margin-top: 20px; }
 .promolist li { *zoom: 1; font-family: "pbold", arial, sans-serif; margin-bottom: 10px; font-size: 0; }
@@ -994,3 +999,4 @@ a img, fieldset { border: none; }
 .promolist li img { vertical-align: middle; margin-right: 10px; }
 .promolist li a { text-decoration: none; color: #333c46; }
 .promolist li span { display: inline-block; vertical-align: middle; width: 155px; font-size: 17px; }
+.promolist.promolist_alt li { margin-top: -30px; }

@@ -1,9 +1,20 @@
+
+.out_seomain
+	padding-bottom: 2570px 
+	position: relative
 .seo
 	border-top: 2px solid #DBDBDB 
 	+clr
 	padding-top: 30px 
 	padding-bottom: 30px 
 	font-size: 13px 
+	&.seo_main
+		position: absolute
+		height: 2520px 
+		overflow: hidden
+		width: 100% 
+		bottom: 0
+		left: 0  
 	.seo__left
 		float: left
 		width: 710px 
@@ -18,6 +29,15 @@
 	.seo__right
 		width: 260px 
 		float: right
+		h3
+			border-top: 1px solid #EFEFEF 
+			padding-top: 12px 
+			margin-bottom: 35px 
+			+bold
+			font-weight: normal
+			&.h3first
+				border-top: none
+				padding-top: 0  
 .promolist
 	list-style: none
 	margin-top: 20px 
@@ -38,4 +58,6 @@
 			vertical-align: middle
 			width: 155px 
 			font-size: 17px 
-		
+	&.promolist_alt
+		li
+			margin-top: -30px 
