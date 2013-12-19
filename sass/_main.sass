@@ -557,12 +557,13 @@
 	margin: 0 -24px
 	.item
 		display: block
+		position: relative
 		border-radius: 6px
 		padding: 20px 20px 15px 20px
 		text-decoration: none
 		color: #3b3b3b 
 		+clr
-		&:hover,&.is-active
+		&:hover,&.is-active11
 			+box-shadow(0 0 0px 1px #B1BFCE,0 0 0 4px #D5E1E8)
 		.item__pics
 			float: left
@@ -681,14 +682,13 @@
 	.wrapresults__objects i
 		+s(grid)
 .items__list
-	float: right
+	position: absolute
 	font-size: 12px 
 	background: #F0F1F1 
 	border-radius: 5px
 	padding: 7px 11px
 	line-height: 1  
 	text-decoration: none
-	position: relative
 	top: 20px
 	right: 20px 
 	b
@@ -697,12 +697,12 @@
 		text-decoration: underline
 	i
 		display: inline-block
-		+s(arrowtop)
+		+s(arrowbot)
 		margin-right: 7px 
 		vertical-align: middle
 	&.is-active
 		i
-			+s(arrowbot)
+			+s(arrowtop)
 		 
 // .table
 // 	+box-shadow(0 0 0px 1px #B1BFCE,0 0 0 4px #D5E1E8)
