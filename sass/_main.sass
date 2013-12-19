@@ -644,10 +644,14 @@
 		.item__data3
 			width: 150px 
 	.item_in
-		margin-left: 0
-		margin-right: 0  
+		// margin-left: 0
+		// margin-right: 0  
 		&:hover
-			+box-shadow(none)
+			//+box-shadow(none)
+		.table
+			clear: both
+			padding-top: 20px 
+
 .wrapresults__switcher
 	float: right
 	text-align: right
@@ -685,7 +689,8 @@
 	line-height: 1  
 	text-decoration: none
 	position: relative
-	top: 20px 
+	top: 20px
+	right: 20px 
 	b
 		font-weight: normal
 		color: #27A9DE
@@ -695,14 +700,17 @@
 		+s(arrowtop)
 		margin-right: 7px 
 		vertical-align: middle
+	&.is-active
+		i
+			+s(arrowbot)
 		 
-.table
-	+box-shadow(0 0 0px 1px #B1BFCE,0 0 0 4px #D5E1E8)
-	margin: 0 -20px 
-	padding: 20px 
-	border-radius: 10px
-	.items
-		margin: 0 
+// .table
+// 	+box-shadow(0 0 0px 1px #B1BFCE,0 0 0 4px #D5E1E8)
+// 	margin: 0 -20px 
+// 	padding: 20px 
+// 	border-radius: 10px
+// 	.items
+// 		margin: 0 
 .h2
 	font-size: 23px 
 	font-weight: normal

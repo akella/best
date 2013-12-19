@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+$('.wrapresults__switcher a').click(function(event) {
+  $('.wrapresults__switcher a').toggleClass('is-active');
+  $('.objectview,.listview').toggle();
+  return false;
+});
+$('.items__list').click(function(event) {
+  $(this).parent().toggleClass('is-active');
+  $(this).toggleClass('is-active');
+  $(this).parent().find('.table').slideToggle();
+  return false;
+});
 
 
 

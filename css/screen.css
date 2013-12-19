@@ -287,8 +287,7 @@ a img, fieldset { border: none; }
 .items .item_vtor .item__data1 { width: 225px; }
 .items .item_vtor .item__data2 { width: 235px; }
 .items .item_vtor .item__data3 { width: 150px; }
-.items .item_in { margin-left: 0; margin-right: 0; }
-.items .item_in:hover { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.items .item_in .table { clear: both; padding-top: 20px; }
 
 .wrapresults__switcher { float: right; text-align: right; width: 290px; font-size: 12px; color: #323c47; cursor: pointer; padding-top: 15px; }
 .wrapresults__switcher a { text-decoration: none; color: #323c47; text-decoration: none; opacity: 0.5; margin-left: 20px; }
@@ -298,12 +297,10 @@ a img, fieldset { border: none; }
 .wrapresults__switcher .wrapresults__list i { background: url('../img/icons-s0d58584fad.png') 0 -2657px no-repeat; width: 11px; height: 10px; }
 .wrapresults__switcher .wrapresults__objects i { background: url('../img/icons-s0d58584fad.png') 0 -2548px no-repeat; width: 10px; height: 10px; }
 
-.items__list { float: right; font-size: 12px; background: #f0f1f1; border-radius: 5px; padding: 7px 11px; line-height: 1; text-decoration: none; position: relative; top: 20px; }
+.items__list { float: right; font-size: 12px; background: #f0f1f1; border-radius: 5px; padding: 7px 11px; line-height: 1; text-decoration: none; position: relative; top: 20px; right: 20px; }
 .items__list b { font-weight: normal; color: #27a9de; text-decoration: underline; }
 .items__list i { display: inline-block; background: url('../img/icons-s0d58584fad.png') 0 -3135px no-repeat; width: 7px; height: 4px; margin-right: 7px; vertical-align: middle; }
-
-.table { -webkit-box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; -moz-box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; margin: 0 -20px; padding: 20px; border-radius: 10px; }
-.table .items { margin: 0; }
+.items__list.is-active i { background: url('../img/icons-s0d58584fad.png') 0 -3121px no-repeat; width: 7px; height: 4px; }
 
 .h2 { font-size: 23px; font-weight: normal; font-family: "pbold", arial, sans-serif; color: #3b3b3b; margin-bottom: 15px; }
 
