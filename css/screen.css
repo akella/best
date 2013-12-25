@@ -587,7 +587,7 @@ a img, fieldset { border: none; }
 
 .description { height: 900px; }
 
-.description__in { height: 780px; border: 2px solid green; overflow: auto; }
+.description__in { height: 780px; overflow: auto; }
 
 .description-wrap { -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; }
 
@@ -777,16 +777,26 @@ a img, fieldset { border: none; }
 .articlepic .articlepic__text.articlepic__text_small { font-size: 17px; padding-top: 20px; }
 
 .article { margin-top: 35px; font-size: 14px; }
+.article a { color: #25a6ca; text-decoration: none; border-bottom: 1px solid #d7eaf2; }
 .article strong { font-weight: normal; font-family: "pbold", arial, sans-serif; }
 .article > p { margin-bottom: 1em; }
 .article .about-callback { margin-top: 40px; margin-bottom: 0; }
 .article .social { margin-top: 130px; }
 .article h2, .article h3 { font-size: 18px; font-weight: normal; font-family: "pbold", arial, sans-serif; margin-top: 36px; margin-bottom: 5px; color: #3b3b3b; }
-.article .note { padding: 20px 25px; -webkit-box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; -moz-box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; border-radius: 10px; margin: 15px 0; }
+.article .note { padding: 20px 25px; -webkit-box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; -moz-box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; box-shadow: 0 0 0px 1px #b1bfce, 0 0 0 4px #d5e1e8; border-radius: 10px; margin: 25px 0; }
 .article .img { margin: 30px 0; text-align: center; }
 .article ul { margin: 1em 2em; list-style-type: disc; }
 .article ul li { padding-left: 5px; margin-bottom: 10px; }
 .article ol { margin: 1em 2em; list-style-type: decimal; }
+
+.join { *zoom: 1; margin: 20px 0; }
+.join:before, .join:after { content: " "; display: table; }
+.join:after { clear: both; }
+.join .join__left { width: 205px; float: left; padding-right: 30px; font-size: 18px; color: #3b3b3b; font-family: "pbold", arial, sans-serif; }
+.join .join__right { overflow: hidden; }
+.join .join__right table { width: 100%; margin-top: 10px; }
+.join .join__right table th, .join .join__right table td { padding: 2px 0; vertical-align: top; }
+.join .join__right table th { font-family: "pbold", arial, sans-serif; text-align: left; }
 
 .tabs-menu_alt { border: none; width: 275px; margin-top: 85px; }
 .tabs-menu_alt ul { margin-bottom: 40px; }

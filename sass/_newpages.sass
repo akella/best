@@ -39,6 +39,10 @@
 .article
 	margin-top: 35px
 	font-size: 14px
+	a
+		color: #25A6CA
+		text-decoration: none
+		border-bottom: 1px solid #D7EAF2  
 	strong
 		font-weight: normal
 		+bold
@@ -60,7 +64,7 @@
 		padding: 20px 25px 
 		+box-shadow(0 0 0px 1px #B1BFCE,0 0 0 4px #D5E1E8)
 		border-radius: 10px
-		margin: 15px 0 
+		margin: 25px 0 
 	.img
 		margin: 30px 0
 		text-align: center 
@@ -74,7 +78,28 @@
 	ol
 		margin: 1em 2em
 		list-style-type: decimal
-
+.join
+	+clr
+	margin: 20px 0 
+	.join__left
+		width: 205px 
+		float: left
+		padding-right: 30px 
+		font-size: 18px 
+		color: #3B3B3B 
+		+bold
+	.join__right
+		overflow: hidden
+		table
+			width: 100%
+			margin-top: 10px 
+			th,td
+				padding: 2px 0
+				vertical-align: top
+			th
+				+bold
+				text-align: left
+		 
 .tabs-menu_alt
 	border: none
 	width: 275px
