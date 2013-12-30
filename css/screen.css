@@ -25,6 +25,7 @@ a img, fieldset { border: none; }
 .l.l_newsvote { margin-bottom: 50px; }
 .l.l_newsvote .l-col1 { width: 220px; }
 .l.l_newsvote .l-col2 { width: 722px; }
+.l.l_svob .l-col1 { width: 730px; }
 
 .header { padding-top: 24px; position: relative; height: 446px; }
 .header .header__logo a { position: absolute; top: 29px; left: 0; background: url('../img/icons-s0633512bd2.png') 0 0 no-repeat; width: 85px; height: 146px; float: left; font: 0/0 a; text-shadow: none; color: transparent; z-index: 200; opacity: 1; }
@@ -138,6 +139,8 @@ a img, fieldset { border: none; }
 
 .search { margin-top: 82px; margin-bottom: 73px; position: relative; background-color: #879193; -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); border-radius: 10px; height: 234px; }
 .search.search_advanced { height: 417px; }
+.search.search_narrow { height: auto; margin-top: 0; }
+.search.search_narrow .search__col1 { border-style: none; }
 
 .search__pre { position: relative; height: 1px; margin-bottom: -36px; margin-top: 36px; z-index: 300; }
 .search__pre h3 { font-size: 15px; font-weight: normal; text-transform: uppercase; color: #3b3b3b; left: 20px; top: 0; position: absolute; }
