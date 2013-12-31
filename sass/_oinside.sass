@@ -70,4 +70,29 @@
 		text-decoration: none
 		font-weight: normal
 		margin-left: 10px 
-				
+.pagination
+	text-align: right
+	font-size: 13px 		
+	color: #777A7C
+	&>*
+		display: inline-block
+		vertical-align: middle
+	input
+		width: 20px 
+		border: 1px solid #E0E0E0 
+		text-align: right
+		font-size: 13px 
+		color: #777A7C
+		padding: 5px  
+	span
+		display: inline-block
+		margin: 0 5px 
+	.pagination__next
+		+s(pnext)
+		margin-left: 3px
+		display: inline-block
+		cursor: pointer
+	.pagination__prev
+		+s(pprev)
+		display: inline-block
+		cursor: pointer
