@@ -23,6 +23,8 @@
 		padding: 20px  0 20px 28px
 		overflow: hidden
 		position: relative
+	.superpopup__content_mod
+		padding: 28px 50px 33px 45px
 	.superpopup__title
 		font-weight: normal
 		font-size: 30px 
@@ -35,10 +37,85 @@
 		position: absolute
 		+s(popupclose)
 		cursor: pointer
+	.superpopup__close_mod
+		position: absolute
+		top: 18px
+		right: 18px
+		cursor: pointer
+		z-index: 1
+		+s(close)
 	.superpopup__nav
 		text-align: right
 		width: 100px 
 		float: left
 	.superpopup__img
 		float: right
-	
+	.superpopup__img_left
+		float: left
+		width: 500px
+		height: 364px
+	.superpopup__text
+		height: 100%
+		border: 1px solid #d7d7d7 
+		color: #818181 
+		font-size: 11px
+		font-weight: normal
+		text-align: center
+		line-height: 362px
+		vertical-align: middle
+		background: #EBEBEB 
+.housing__img_mar
+	margin: 35px 0 60px 50px 
+.superpopup_mod
+	margin-left: -(950px/2) 
+	margin-top: -(564px/2)
+	width: 950px 
+	border-radius: 3px 
+	font-family: arial, sans-serif
+	font-weight: normal
+	.superpopup__title_23
+		font-size: 23px
+		font-weight: bold
+	.title__popup
+		font-size: 25px
+		font-weight: normal
+	.superpopup__left
+		float: left
+		padding: 35px 0 12px 0
+		width: 545px
+		height: 466px
+		border-right: 1px solid #e9e9e9 
+	.superpopup__right
+		float: right
+		padding: 50px 0 0 50px
+		text-align: center
+	.table__popup
+		width: 255px
+		margin-bottom: 30px
+		tr
+			td
+				height: 30px
+				font-size: 13px
+				text-align: left
+				color: #333 
+				&:first-child
+					padding-right: 10px
+					text-align: right
+					color: #818181 
+	.btn_popup
+		margin-bottom: 13px
+		font: normal 10px arial, sans-serif
+	.print
+		position: relative
+		padding-left: 20px
+		font-size: 12px
+		line-height: 1
+		color: #000 
+		&:hover
+			text-decoration: none
+		&:before
+			position: absolute
+			content: ""
+			top: 2px
+			left: 0
+			+s(print) 
