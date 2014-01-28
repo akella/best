@@ -347,6 +347,74 @@
 					+bold 
 
 
+.mstep
+	min-height: 240px 
+	padding-bottom: 30px 
+	display: inline-block
+	width: 100%
+	border-bottom: 1px solid #C1C4C7
+	margin-bottom: 15px
+	&.mstep_last
+		border-bottom: none
+	&.mstep_first
+		margin-top: 40px 
+	h2
+		font-size: 20px 
+		+bold
+		color: #3B3B3B
+		margin-bottom: 5px  
+	.mstep__pic
+		float: left
+		position: relative
+		margin-right: 35px 
+		img
+			display: block
+			width: 100% 
+		.mstep__pictext
+			position: absolute
+			left: -35px 
+			bottom: -30px 
+			font-size: 21px 
+			color: #fff
+			+s(mstep) 
+			+bold
+			div
+				padding: 13px 0 0 35px 
+				line-height: 1.1 
+	h3
+		font-size: 18px 
+		color: #2BC3EE
+		font-weight: normal
+		+bold
+		margin-bottom: 12px  
+		a
+			color: #2BC3EE
+			text-decoration: underline 
+	.mstep__text
+		font-size: 14px 
+		color: #3B3B3B
+		overflow: hidden
+		p
+			margin-bottom: 1em 
+		ul
+			margin: 1em 2em
+			list-style-type: disc
+			li
+				padding-left: 5px 
+				margin-bottom: 10px 
+		ol
+			margin: 1em 2em
+			list-style-type: decimal
+	.greenbutton
+		@extend %button
+		text-decoration: none
+		padding: 0 35px
+		font-size: 15px  
+	h4
+		font-weight: normal
+		font-size: 18px 
+		+bold
+		color: #3B3B3B 
 
 
 
