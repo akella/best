@@ -415,8 +415,43 @@
 		font-size: 18px 
 		+bold
 		color: #3B3B3B 
+.obmenform
+	background: #EFF0F0
+	border-radius: 3px
+	position: relative  
+	overflow: hidden
+	.obmenform__title
+		padding: 30px
+		font-size: 18px  
+		color: #3B3B3B
+		position: absolute
+		left: 0
+		top: 0
+		width: 175px 
+	.obmenform__right
+		background: #61676C
+		border-radius: 3px 
+		width: 436px - 60px
+		float: right
+		padding: 30px 25px 30px 30px
+		input
+			float: left
+			width: 175px - 20px
+			margin-right: 10px 
+			padding: 10px 10px
+			font-size: 13px   
+			margin-bottom: 5px 
+			border: thin
+		.obmenform__formbottom
+			clear: both
+			padding-top: 10px 
+			text-align: right
+			width: 175px*2 + 10px
+			a
+				@extend %button
+				text-decoration: none
 
-
+	
 
 
 
