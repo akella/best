@@ -916,6 +916,8 @@ a img, fieldset { border: none; }
 .obmenform .obmenform__right .obmenform__formbottom { clear: both; padding-top: 10px; text-align: right; width: 360px; }
 .obmenform .obmenform__right .obmenform__formbottom a { text-decoration: none; }
 
+.moreinfomanager { font-size: 12px; margin-bottom: 30px; margin-top: 10px; color: #3b3b3b; }
+
 .h3 { margin-top: 50px; border-top: 1px solid #c1c4c7; text-align: center; font-size: 23px; margin-bottom: 5px; font-family: "pbold", arial, sans-serif; }
 .h3 span { display: inline-block; background: white; padding: 0 10px; position: relative; top: -17px; }
 
