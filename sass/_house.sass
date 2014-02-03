@@ -48,7 +48,7 @@
 		z-index: 3 
 		font-size: 0 
 		&:hover
-			background: #EEF0F3
+			background: rgba(#EEF0F3, 0.6)
 			.house__floornumber
 				color: #4185E2 
 		.house__flat
@@ -58,6 +58,17 @@
 			vertical-align: top
 			position: relative
 			text-decoration: none
+			cursor: pointer
+			position: relative
+			&:hover
+				&:before
+					content: ' '
+					position: absolute
+					left: 0
+					top: 0
+					bottom: 0
+					right: 0
+					border: 2px solid #7FB417   
 			i
 				position: absolute
 				top: 0
