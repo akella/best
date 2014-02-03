@@ -1,0 +1,93 @@
+.sections
+	margin: 31px 0 52px 0
+	display: inline-block
+	width: 100%
+	.sections__nav
+		display: inline-block
+		a
+			text-decoration: none
+			display: inline-block
+			margin-right: 15px 
+			color: #5698EE
+			border-bottom: 1px solid rgba(#5698EE, .3)
+			&.is-active
+				border: none
+				color: #9A9A9A  
+	.sections__part
+		font-size: 21px 
+		color: #3B3B3B
+		display: inline-block
+		margin-right: 20px  
+		+bold
+.house
+	position: relative
+	width: 713px 
+	padding-bottom: 31px 
+	margin: 0 auto 
+	padding-top: 36px
+	.house__bottom
+		position: absolute
+		bottom: 0
+		left: 0  
+		width: 713px
+		height: 98px 
+		z-index: 1 
+		background: url(../img/dombottom.png)  no-repeat 0 0
+	.house__top
+		position: absolute
+		top: 0
+		left: 113px  
+		width: 501px 
+		height: 38px 
+		background: url(../img/top.png) no-repeat 0 0
+	.house__floor
+		height: 25px 
+		position: relative
+		padding-left: 113px 
+		margin-bottom: 2px 
+		z-index: 3 
+		font-size: 0 
+		&:hover
+			background: #EEF0F3
+			.house__floornumber
+				color: #4185E2 
+		.house__flat
+			margin-right: 2px 
+			+s(flat)
+			display: inline-block
+			vertical-align: top
+			position: relative
+			text-decoration: none
+			i
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: #5D9FF3
+				background: rgba(#5D9FF3, .8)
+				text-align: center
+				height: 25px 
+				line-height: 25px
+				color: #fff
+				font-weight: bold  
+				font-size: 16px 
+				font-style: normal 
+				
+			&.house__flat_alt
+				+s(flatalt)
+		.house__floornumber
+			position: absolute
+			left: 0
+			top: 0 
+			height: 25px  
+			line-height: 25px
+			color: #CDD1D5
+			font-size: 13px  
+			width: 30px 
+			text-align: center
+			&.right
+				position: absolute
+				right: 0
+				left: auto 
+		
