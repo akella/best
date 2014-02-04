@@ -1138,6 +1138,7 @@ a img, fieldset { border: none; }
 .house .house__floor:hover .house__floornumber { color: #4185e2; }
 .house .house__floor .house__flat { margin-right: 2px; background: url('../img/icons-s19cf5520b8.png') 0 -1378px no-repeat; width: 46px; height: 25px; display: inline-block; vertical-align: top; position: relative; text-decoration: none; cursor: pointer; position: relative; }
 .house .house__floor .house__flat:hover:before { content: " "; position: absolute; left: 0; top: 0; bottom: 0; right: 0; border: 2px solid #7fb417; }
+.house .house__floor .house__flat:hover i { background: #87c019; }
 .house .house__floor .house__flat i { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #5d9ff3; background: rgba(93, 159, 243, 0.8); text-align: center; height: 25px; line-height: 25px; color: white; font-weight: bold; font-size: 16px; font-style: normal; }
 .house .house__floor .house__flat.house__flat_alt { background: url('../img/icons-s19cf5520b8.png') 0 -1413px no-repeat; width: 46px; height: 25px; }
 .house .house__floor .house__floornumber { position: absolute; left: 0; top: 0; height: 25px; line-height: 25px; color: #cdd1d5; font-size: 13px; width: 30px; text-align: center; }

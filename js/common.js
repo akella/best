@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+$('.sections__nav').on('click', 'a', function(event) {
+  idd = $(this).attr('href');
+  
+  $('.sections__nav a').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  $('.bb').hide()
+  $(''+idd).show();
+  return false;
+});
+
 $('.wrapresults__switcher a').click(function(event) {
   $('.wrapresults__switcher a').toggleClass('is-active');
   $('.objectview,.listview').toggle();
