@@ -1125,10 +1125,13 @@ a img, fieldset { border: none; }
 .promolist.promolist_alt li { margin-top: -30px; }
 
 .sections { margin: 31px 0 52px 0; display: inline-block; width: 100%; }
-.sections .sections__nav { display: inline-block; }
-.sections .sections__nav a { text-decoration: none; display: inline-block; margin-right: 15px; color: #5698ee; border-bottom: 1px solid rgba(86, 152, 238, 0.3); }
+.sections .sections__nav { display: block; }
+.sections .sections__nav a { text-decoration: none; display: inline-block; margin-right: 15px; color: #3a3c3f; border-bottom: 1px solid rgba(58, 60, 63, 0.3); }
 .sections .sections__nav a.is-active { border: none; color: #9a9a9a; }
 .sections .sections__part { font-size: 21px; color: #3b3b3b; display: inline-block; margin-right: 20px; font-family: "pbold", arial, sans-serif; }
+.sections .sections__korp { margin: 10px 0; }
+.sections .sections__korp a { display: inline-block; background: #f2f2f2; border-radius: 4px; font-size: 14px; padding: 6px 10px; margin-right: 10px; color: #5698ee; }
+.sections .sections__korp a.is-active { color: darkgrey; text-decoration: none; }
 
 .house { position: relative; width: 713px; padding-bottom: 31px; margin: 0 auto; padding-top: 36px; }
 .house .house__bottom { position: absolute; bottom: 0; left: 0; width: 713px; height: 98px; z-index: 1; background: url(../img/dombottom.png) no-repeat 0 0; }
