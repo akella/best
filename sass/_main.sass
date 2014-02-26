@@ -615,15 +615,15 @@
 				margin-bottom: 1em 
 		.item__icons
 			float: right
-			width: 100px 
-			i
-				display: inline-block
-				margin-right: 7px 
-				margin-bottom: 7px 
-				vertical-align: top
-			@for $s from 1 through 8
-				.icon_#{$s}
-					+s(i#{$s})
+			width: 100px
+			// i
+			// 	display: inline-block
+			// 	margin-right: 7px
+			// 	margin-bottom: 7px
+			// 	vertical-align: top
+			// @for $s from 1 through 8
+			// 	.icon_#{$s}
+			// 		+s(i#{$s})
 	.item_vtor
 		.item__info
 			overflow: hidden
@@ -657,6 +657,45 @@
 		.table
 			clear: both
 			padding-top: 20px 
+
+.besticon
+	position: relative
+	display: inline-block
+	vertical-align: top
+	margin-right: 3px
+	margin-bottom: 5px
+	&:hover
+		.besticon__tooltip
+			display: block
+	i
+		display: inline-block
+		vertical-align: top
+	@for $s from 1 through 27
+		&.besticon_#{$s}
+			i
+				+s(besticon_#{$s})
+.besticon__tooltip
+	position: absolute
+	bottom: 100%
+	left: 50%
+	margin-left: -58px
+	display: none
+	z-index: 10
+	font-size: 14px
+	color: #3b3b3b
+	line-height: 1
+	width: 116px
+	margin-bottom: 5px
+	text-align: center
+
+	// i
+	// 	display: inline-block
+	// 	margin-right: 7px
+	// 	margin-bottom: 7px
+	// 	vertical-align: top
+	// @for $s from 1 through 8
+	// 	.icon_#{$s}
+	// 		+s(i#{$s})
 
 .wrapresults__switcher
 	float: right
