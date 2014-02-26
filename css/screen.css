@@ -315,7 +315,7 @@ a img, fieldset { border: none; }
 .besticon.besticon_26 i { background: url('../img/icons-s3b3505fcb4.png') 0 -2839px no-repeat; width: 28px; height: 30px; }
 .besticon.besticon_27 i { background: url('../img/icons-s3b3505fcb4.png') 0 -1578px no-repeat; width: 28px; height: 30px; }
 
-.besticon__tooltip { position: absolute; bottom: 100%; left: 50%; margin-left: -58px; display: none; z-index: 10; font-size: 14px; color: #3b3b3b; line-height: 1; width: 116px; margin-bottom: 5px; text-align: center; }
+.besticon__tooltip { position: absolute; bottom: 100%; left: 50%; margin-left: -64px; margin-bottom: 5px; width: 116px; display: none; z-index: 10; padding: 2px 6px; font-size: 13px; color: #3b3b3b; line-height: 1; text-align: center; background: white; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; -webkit-box-shadow: 0 0 0px 1px rgba(177, 191, 206, 0.4), 0 2px 4px 1px rgba(213, 225, 232, 0.6); -moz-box-shadow: 0 0 0px 1px rgba(177, 191, 206, 0.4), 0 2px 4px 1px rgba(213, 225, 232, 0.6); box-shadow: 0 0 0px 1px rgba(177, 191, 206, 0.4), 0 2px 4px 1px rgba(213, 225, 232, 0.6); }
 
 .wrapresults__switcher { float: right; text-align: right; width: 290px; font-size: 12px; color: #323c47; cursor: pointer; padding-top: 15px; }
 .wrapresults__switcher a { text-decoration: none; color: #323c47; text-decoration: none; opacity: 0.5; margin-left: 20px; }
